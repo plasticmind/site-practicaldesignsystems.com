@@ -1,0 +1,24 @@
+---
+permalink: /posts/index.html
+pageTitle: "Daily Posts"
+pageDescription: "Daily practical advice about encouraging better collaboration between design and engineering teams."
+eleventyNavigation:
+  key: Tips
+  title: Blog
+  order: 3
+---
+
+{% extends "layouts/base.njk" %}
+
+{% set metaTitle = pageTitle %}
+{% set metaDescription = pageDescription %}
+{% set currentSectionId = "posts" %}
+
+{% block content %}
+  <section class="c-section">
+    <div class="l-container">
+      <h1 class="c-section__title">Daily Tips</h1>
+      <p class="c-tagline__subtitle">Every weekday, I send out a short email with advice for improving collaboration and communication between design and engineering teams.</p> 
+    </div>
+  </section>
+{% endblock %}

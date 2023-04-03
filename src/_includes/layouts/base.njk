@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xhn3otp.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/global.css">    
+    <link rel="canonical" href="{{ site.url }}/{% if page.fileSlug %}{{ page.fileSlug }}{% endif %}">
+  </head>
+  <body class="{% if page.fileSlug %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
+      <section class="c-site-header c-site-header__inverse">
+        <div class="l-container">
+          <div class="c-logo">
+            {% include "svg/logo-pds.svg" %}
+          </div>
+          <nav class="c-nav" role="navigation" aria-label="Main">
+            {{ 
+              collections.all | 
+              eleventyNavigation | 
+              eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | 
+              safe 
+            }}
+            <button class="c-nav__hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </section>
+      <main class="c-site-content" role="main">
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+      </main>
+      <footer class="c-section  c-section--gray">
+        <div class="l-container">
+          <h2 class="c-section__title">About Me</h2> 
+          <p class="c-section__subtitle">I'm a design systems consultant with over 10 years of experience building and improving design systems.</p>
+        </div>
+      </footer>
+
+  </body>
+</html>

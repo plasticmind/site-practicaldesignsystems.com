@@ -1,0 +1,31 @@
+{
+    "name": "Practical Design Systems",
+    "version": "0.1.0",
+    "description": "First draft of the Practical Design Systems website.",
+    "main": "index.js",
+    "scripts": {
+        "start": "ELEVENTY_ENV=development eleventy --serve",
+        "build": "ELEVENTY_ENV=development eleventy",
+        "build:prod": "ELEVENTY_ENV=production eleventy",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "education",
+        "design systems",
+        "design"
+    ],
+    "author": "J",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.0",
+        "@11ty/eleventy-fetch": "^4.0.0",
+        "@11ty/eleventy-navigation": "^0.3.5",
+        "@11ty/eleventy-plugin-rss": "^1.2.0",
+        "eleventy-plugin-metagen": "^1.7.11"
+    },
+    "Dependencies": {
+        "@11ty/eleventy-fetch": "^3.0.0",
+        "@11ty/eleventy-img": "^2.0.1",
+        "eleventy-plugin-metagen": "^1.7.11"
+    }
+}

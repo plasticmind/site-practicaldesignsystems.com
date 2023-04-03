@@ -1,0 +1,116 @@
+---
+permalink: /case-studies/index.html
+pageTitle: "Case Studies"
+pageDescription: "Some of the ways I've helped build consensus and efficiency between design and engineering disciplines."
+eleventyNavigation:
+  key: Work
+  order: 3
+---
+
+{% extends "layouts/base.njk" %}
+
+{% set metaTitle = pageTitle %}
+{% set metaDescription = pageDescription %}
+{% set currentSectionId = "case-studies" %}
+
+{% block content %}
+
+  <section class="c-section">
+    <div class="l-container">
+
+          <h1 class="c-section__title">Case Studies</h1>
+          <p class="c-tagline__subtitle">I help teams build better software by improving collaboration, communication, and transparency between design and engineering teams.</p> 
+    </div>
+  </section>
+
+  <section class="c-section"> 
+    <div class="l-container">
+      <div class="c-card-grid">
+        <div class="c-card">
+          <div class="c-card__media">
+            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
+          </div>
+          <div class="c-card__body">
+            <h3 class="c-card__title">Case Study 1</h2>
+            <p>Case study 1 description.</p>
+          </div>
+        </div>
+        <div class="c-card">
+          <div class="c-card__media">
+            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
+          </div>
+          <div class="c-card__body">
+            <h3 class="c-card__title">Case Study 2</h2>
+            <p>Case study 2 description.</p>
+          </div>
+        </div>
+        <div class="c-card">
+          <div class="c-card__media">
+            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
+          </div>
+          <div class="c-card__body">
+            <h3 class="c-card__title">Case Study 3</h2>
+            <p>Case study 3 description.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <section class="c-section"> 
+    <div class="l-container">
+      <h2 class="c-section__title">What People Are Saying</h2> 
+
+      <div class="c-testimonial">
+        <div class="c-testimonial__body">
+          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
+          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
+        </div>
+      </div>
+      <div class="c-testimonial"> 
+        <div class="c-testimonial__body">
+          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
+          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
+        </div>
+      </div>
+      <div class="c-testimonial"> 
+        <div class="c-testimonial__body">
+          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
+          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="c-section  c-section--gray">
+    <div class="l-container">
+      <h2 class="c-section__title">About Me</h2> 
+      <p class="c-section__subtitle">I'm a design systems consultant with over 10 years of experience building and improving design systems.</p>
+
+      <div class="c-card-grid">
+
+        <div class="c-card">
+          <div class="c-card__media">
+            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
+          </div>
+          <div class="c-card__body">
+            <h3 class="c-card__title">About Me</h2>
+            <p>My name is John Doe. I'm a design systems consultant with over 10 years of experience building and improving design systems.</p>
+          </div>
+        </div>
+        <div class="c-card">
+          <div class="c-card__media">
+            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
+          </div>
+          <div class="c-card__body">
+            <h3 class="c-card__title">Contact Me</h2>
+            <p>Want to get in touch? I'd love to hear from you. You can reach me at <a href="mailto:jesse@plasticmind.com">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
