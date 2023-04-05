@@ -16,172 +16,77 @@ eleventyNavigation:
 
 {% block content %}
 
-  <section class="c-section  c-section--navy">
+  <section class="c-section">
     <div class="l-container">
+      <h1 class="c-section__title">On a mission to eliminate handoff headaches.</h1>
+      <div class="c-section__body">
+        <p>If you build software, you know the friction that exists between idea and execution. Stakeholders have big ideas that never seem to make it to market. Designers create stunning comps that seem to always overpromise. Developers wage an endless battle between speed and sustainability. Everyone ends up arguing over responsibility assignment, feature prioritization, tech debt, and padded estimates. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section">
+    <div class="l-container--lg">
+      
+      <div class="l-grid l-grid--2-col">
+        <div class="l-grid__item">
+          <div class="c-media">
+            <img class="c-media__img" src="/assets/img/jesse-avatar.jpg" alt="Jesse Gardner">
+          </div>
+        </div>
+        <div class="l-grid__item">
+            <h2 class="c-section__title">Hi, I'm Jesse.</h2>
+            <p>I started Practical Design Systems to help organizations solve these problems by helping design and engineering teams work better together — with design systems! </p>
+            <p>I began in design and moved to engineering, so I understand both disciplines well. I’ve also been doing this for nearly 20 years, both as a solo entrepreneur and in leadership at various enterprise orgs, so I can provide strategic insights as well as practical tips.</p>
+            <p><a href="#">Contact me.</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="c-section">
+    <div class="l-container">
+      <h2 class="c-section__title">Daily Emails</h2>
+      <div class="c-section__body">
+        <p>Sign up to get daily bite-sized insights about design systems, product design, and managing people:</p>
+
+        <form class="c-form">
+          <div class="c-form__field">
+            <label class="c-form__label" for="email">Email</label>
+            <input class="c-form__input" type="email" id="email" name="email" placeholder="Enter Email Address">
+            <input class="c-form__submit" type="submit" value="Subscribe">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section"> 
+    <div class="l-container--lg">
+      <h2 class="c-section__title">People I Have Helped</h2> 
 
       <div class="l-grid l-grid--2-col">
-        <div class="l-grid__item l-grid__item--wide">
-          <h1 class="c-section__title">Better collaboration between design and engineering teams.</h1>
-          <p class="c-tagline__subtitle">I help teams build better software by improving collaboration, communication, and transparency between design and engineering teams.</p> 
 
-          <div class="c-cta">
-            <a href="/contact/" class="c-button">Get in touch</a>
-          </div>
-        </div>
-        <div class="l-grid__item  l-grid__item--narrow">
-          <div class="c-illustration">
-            {% include "svg/illustration-assemble.svg" %}
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="c-section c-section--lg">
-    <div class="l-container">
-      
-      <div class="l-grid  l-grid--2-col">
         <div class="l-grid__item">
-          <div class="c-illustration">
-            {% include "svg/illustration-unify-poke.svg" %}
+          <div class="c-testimonial">
+            <div class="c-testimonial__body">
+              <p class="c-testimonial__text">“I appreciated Jesse's balance of hands-on doing and client coaching and empowerment. He brought tools and templates from prior experience, but right-sized them for our particular context, then helped implement it so that it became part of our core process. We got exactly what we needed to be unblocked, in a way that felt easy to maintain over time.”</p>
+              <p class="c-testimonial__author">- Becky Buck, <em>Forge</em></p>
+            </div>
           </div>
         </div>
+
         <div class="l-grid__item">
-            <h2 class="c-section__title">Eliminate handoff headaches.</h2>
-            <p>If you’ve done any software building, you’ve experienced the handoff headaches. Your design team has done research and created killer designs that promise to drive significant user value. They hand off designs to the development team to build… but there’s so. much. friction.</p> 
-            <p>There’s the inevitable chorus of feedback from engineering. How should this feature work on mobile? Where’s the key artwork? Is there an interactive state for this component? Those colors aren’t accessible. That platform doesn’t support animation. This functionality is dependent on a legacy system that needs to be updated. We’re going to need to get the infrastructure team involved.</p>
-            <p>Instead of building and shipping software efficiently, you’re playing a game of negotiation between design and engineering, arguing over responsibility assignment, feature prioritization, tech debt, and padded estimates.</p>
+          <div class="c-testimonial"> 
+            <div class="c-testimonial__body">
+              <p class="c-testimonial__text">“Jesse is a good problem solver and a good collaborator. Not only does he come up with creative ways to solve design problems, he welcomes input from others to come to the best solution. He puts results over ego.”</p>
+              <p class="c-testimonial__author">- Elise Bauer, <em>Simply Recipes</em></p>
+            </div>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <section class="c-section c-section--lg c-section--gray c-section--top-slope">
-    <div class="l-container">
-      <h2 class="c-section__title">Services</h2> 
-      <p class="c-section__subtitle">Helping you build better by improving collaboration, communication, and transparency between design and engineering teams.</p>
-
-      <div class="c-card-grid">
-
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">System Evaluation</h2>
-            <p>What's the maturity of your existing design system? Are you getting the most out of it? I can evaluate your current system and provide recommendations for improvement.</p>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">Team Training</h2>
-            <p>Are your teams struggling to collaborate? I can provide comprehensive training to help your teams work together more effectively.</p>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">Custom Project</h2>
-            <p>Do you need help starting your design system? I can help your teams build a design system.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="c-section  c-section--yellow"> 
-    <div class="l-container">
-      <div class="c-logo-roll">
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-        <div class="c-logo-roll__item">
-          <img src="/assets/img/placeholder-logo.svg" alt="placeholder image">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="c-section"> 
-
-    <div class="l-container">
-
-      <h2 class="c-section__title">Case Studies</h2> 
-      <p class="c-section__subtitle">Design systems work comes in all shapes and sizes, depending on the needs and complexities of each organization. Here's a sampling of some of the ways we've helped different organizations.</p>
-
-      <div class="c-card-grid">
-        
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">Case Study 1</h2>
-            <p>Case study 1 description.</p>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">Case Study 2</h2>
-            <p>Case study 2 description.</p>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card__media">
-            <img src="/assets/img/placeholder-icon.svg" alt="placeholder image">
-          </div>
-          <div class="c-card__body">
-            <h3 class="c-card__title">Case Study 3</h2>
-            <p>Case study 3 description.</p>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </section>
-
-  <section class="c-section"> 
-    <div class="l-container">
-      <h2 class="c-section__title">What People Are Saying</h2> 
-
-      <div class="c-testimonial">
-        <div class="c-testimonial__body">
-          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
-          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
-        </div>
-      </div>
-      <div class="c-testimonial"> 
-        <div class="c-testimonial__body">
-          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
-          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
-        </div>
-      </div>
-      <div class="c-testimonial"> 
-        <div class="c-testimonial__body">
-          <p class="c-testimonial__text">I've worked with John on a number of projects and he's always been a pleasure to work with. He's a great communicator and has a knack for breaking down complex problems into simple solutions. I'd highly recommend him.</p>
-          <p class="c-testimonial__author">- Jane Doe, VP of Engineering</p>
-        </div>
       </div>
 
     </div>

@@ -9,24 +9,12 @@
     <link rel="canonical" href="{{ site.url }}/{% if page.fileSlug %}{{ page.fileSlug }}{% endif %}">
   </head>
   <body class="{% if page.fileSlug %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
-      <section class="c-site-header c-site-header__inverse">
+      <section class="c-site-header">
         <div class="l-container">
           <div class="c-logo">
-            {% include "svg/logo-pds.svg" %}
+            {% include "svg/logo-pds-wordmark.svg" %}
+            {% include "svg/logo-pds-icon.svg" %}
           </div>
-          <nav class="c-nav" role="navigation" aria-label="Main">
-            {{ 
-              collections.all | 
-              eleventyNavigation | 
-              eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | 
-              safe 
-            }}
-            <button class="c-nav__hamburger" id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </nav>
         </div>
       </section>
       <main class="c-site-content" role="main">
@@ -34,10 +22,16 @@
         {{ content | safe }}
         {% endblock %}
       </main>
-      <footer class="c-section  c-section--gray">
+      <footer class="c-site-footer">
         <div class="l-container">
-          <h2 class="c-section__title">About Me</h2> 
-          <p class="c-section__subtitle">I'm a design systems consultant with over 10 years of experience building and improving design systems.</p>
+          <p class="c-social-links">
+            <ul class="l-grid l-grid--2-col">
+
+              <li class="l-grid__item"><a href="mailto:jesse@plasticmind.com" target="_blank" rel="noopener noreferrer">jesse@plasticmind.com</a></li>
+              <li class="l-grid__item"><a href="https://tiktok.com/@plasticmind" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+              <li class="l-grid__item"><a href="https://linkedin.com/in/plasticmind/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li class="l-grid__item"><a href="https://twitter.com/plasticmind" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </p>
         </div>
       </footer>
 
