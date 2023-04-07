@@ -29,13 +29,13 @@ eleventyNavigation:
     <div class="l-container--lg">
       
       <div class="l-grid l-grid--2-col">
-        <div class="l-grid__item">
-          <div class="c-media">
-            <img class="c-media__img" src="/assets/img/jesse-avatar.jpg" alt="Jesse Gardner">
+        <div class="l-grid__item l-grid__item--narrow">
+          <div class="c-avatar">
+            <img class="c-avatar__img" src="/assets/img/jesse-avatar.jpg" alt="Jesse Gardner">
           </div>
         </div>
-        <div class="l-grid__item">
-            <h2 class="c-section__title">Hi, I'm Jesse.</h2>
+        <div class="l-grid__item  l-grid__item--wide">
+            <h2 class="c-section__title--left">Hi, I'm Jesse.</h2>
             <p>I started Practical Design Systems to help organizations solve these problems by helping design and engineering teams work better together — with design systems! </p>
             <p>I began in design and moved to engineering, so I understand both disciplines well. I’ve also been doing this for nearly 20 years, both as a solo entrepreneur and in leadership at various enterprise orgs, so I can provide strategic insights as well as practical tips.</p>
             <p><a href="#">Contact me.</a></p>
@@ -49,13 +49,15 @@ eleventyNavigation:
     <div class="l-container">
       <h2 class="c-section__title">Daily Emails</h2>
       <div class="c-section__body">
-        <p>Sign up to get daily bite-sized insights about design systems, product design, and managing people:</p>
 
         <form class="c-form">
+        <p>Sign up to get daily bite-sized insights about design systems, product design, and managing people:</p>
           <div class="c-form__field">
             <label class="c-form__label" for="email">Email</label>
             <input class="c-form__input" type="email" id="email" name="email" placeholder="Enter Email Address">
-            <input class="c-form__submit" type="submit" value="Subscribe">
+            <button type="submit" class="c-form__submit" aria-label="Submit">
+              {% include "svg/icon-arrow.svg" %}
+            </button>
           </div>
         </form>
 
@@ -65,7 +67,7 @@ eleventyNavigation:
 
   <section class="c-section"> 
     <div class="l-container--lg">
-      <h2 class="c-section__title">People I Have Helped</h2> 
+      <h2 class="c-section__title">People I've Helped</h2> 
 
       <div class="l-grid l-grid--2-col">
 

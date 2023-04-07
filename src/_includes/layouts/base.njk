@@ -12,8 +12,8 @@
       <section class="c-site-header">
         <div class="l-container">
           <div class="c-logo">
-            {% include "svg/logo-pds-wordmark.svg" %}
-            {% include "svg/logo-pds-icon.svg" %}
+            <div class="c-logo__wordmark">{% include "svg/logo-pds-wordmark.svg" %}</div>
+            <div class="c-logo__icon">{% include "svg/logo-pds-icon.svg" %}</div>
           </div>
         </div>
       </section>
@@ -24,13 +24,15 @@
       </main>
       <footer class="c-site-footer">
         <div class="l-container">
+          <h2 class="c-section__title">Elsewhere</h2> 
           <p class="c-social-links">
-            <ul class="l-grid l-grid--2-col">
-
-              <li class="l-grid__item"><a href="mailto:jesse@plasticmind.com" target="_blank" rel="noopener noreferrer">jesse@plasticmind.com</a></li>
-              <li class="l-grid__item"><a href="https://tiktok.com/@plasticmind" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-              <li class="l-grid__item"><a href="https://linkedin.com/in/plasticmind/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li class="l-grid__item"><a href="https://twitter.com/plasticmind" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <ul>
+              <li><span class="c-link__icon">{% include "svg/icon-email.svg" %}</span><a href="mailto:jesse@plasticmind.com" class="c-link" target="_blank" rel="noopener noreferrer" title="Send me an email.">Email</a></li>
+              <li><span class="c-link__icon">{% include "svg/icon-plasticmind.svg" %}</span><a href="https://plasticmind.com" class="c-link" target="_blank" rel="noopener noreferrer" title="Writing about technology on Plasticmind.">Plasticmind</a></li>
+              <li><span class="c-link__icon">{% include "svg/icon-adplist.svg" %}</span><a href="https://adplist.org/mentors/jesse-gardner" class="c-link" target="_blank" rel="noopener noreferrer" title="Mentoring people on ADPList.">ADPList</a></li>
+              <li><span class="c-link__icon">{% include "svg/icon-linkedin.svg" %}</span><a href="https://linkedin.com/in/plasticmind/" class="c-link" target="_blank" rel="noopener noreferrer" title="Connecting with professionals on LinkedIn.">LinkedIn</a></li>
+              <li><span class="c-link__icon">{% include "svg/icon-twitter.svg" %}</span><a href="https://twitter.com/plasticmind" class="c-link" target="_blank" rel="noopener noreferrer" title="Connecting with people on Twitter.">Twitter</a></li>
+              <li><span class="c-link__icon">{% include "svg/icon-tiktok.svg" %}</span><a href="https://tiktok.com/@plasticmind" class="c-link" target="_blank" rel="noopener noreferrer" title="Teaching people on TikTok.">TikTok</a></li>
           </p>
         </div>
       </footer>
