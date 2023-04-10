@@ -36,6 +36,7 @@
     /* -- Layout */
     --max-width: 512px;
     --max-width-lg: 768px;
+    --max-width-xl: 1024px;
     /* -- Breakpoints */
     --bp-sm: 320px;
     --bp-md: 768px;
@@ -130,7 +131,8 @@ h2 {
 /* Layout */
 
 .l-container,
-.l-container--lg {
+.l-container--lg,
+.l-container--xl {
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
     overflow: hidden;
@@ -142,6 +144,10 @@ h2 {
 
 .l-container--lg {
     max-width: var(--max-width-lg);
+}
+
+.l-container--xl {
+    max-width: var(--max-width-xl);
 }
 
 
@@ -354,8 +360,10 @@ a:hover {
     margin-bottom: var(--spacing-xxl);
 }
 
+.c-logo__icon svg {}
+
 .c-logo svg g {
-    /* mix-blend-mode: normal !important; */
+    mix-blend-mode: screen;
 }
 
 
@@ -368,10 +376,7 @@ a:hover {
     .c-logo__wordmark {
         margin-bottom: var(--spacing-xl);
     }
-    .c-logo__icon svg {
-        max-width: 40%;
-        height: auto;
-    }
+    .c-logo__icon svg {}
     .c-section {
         padding: var(--spacing-xl) 0;
     }
