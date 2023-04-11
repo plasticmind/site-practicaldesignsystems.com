@@ -44,7 +44,7 @@
   <script>
 
     // Enable debug mode
-    const debug = true;
+    const debug = false;
 
     // Check if the user prefers reduced motion
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -133,20 +133,17 @@
 
       // Set a new debounce timer
       debounceTimer = setTimeout(handleScroll, debounceDuration);
-    }
-
-    console.log("isReduced: " + isReduced);
-    console.log("supportsBlendMode: " + supportsBlendMode);
+    }    
 
     // Add the debounced scroll event listener to the window
-    if(supportsBlendMode && !isReduced) {
+    if(supportsBlendMode===true) {
       prepareAnimation();
       window.addEventListener('scroll', debounceScroll);
     }
 
+    // Debug mode
     if(debug===true) {
 
-      // Create a new div element with a class of c-debug
       const debug_holder = document.createElement('div');
 
       debug_holder.classList.add('c-debug');
@@ -158,14 +155,17 @@
       const debugSupportsBlendMode = document.createElement('pre');
         debugSupportsBlendMode.innerHTML = 'Supports Blend Mode: ' + supportsBlendMode;
         debug_holder.appendChild(debugSupportsBlendMode);
+        console.log("supportsBlendMode: " + supportsBlendMode);
 
       const debugIsReduced = document.createElement('pre');
         debugIsReduced.innerHTML = 'Is Reduced: ' + isReduced;
         debug_holder.appendChild(debugIsReduced);
+        console.log("isReduced: " + isReduced);
 
       const debugScrollThreshold = document.createElement('pre');
         debugScrollThreshold.innerHTML = 'Scroll Threshold: ' + scrollThreshold;
         debug_holder.appendChild(debugScrollThreshold);
+        console.log("scrollThreshold: " + scrollThreshold);
 
       document.querySelector('body').appendChild(debug_holder);
 
