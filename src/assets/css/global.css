@@ -15,6 +15,7 @@
     /* -- Typography */
     --font-family-body: 'degular-text', sans-serif;
     --font-family-heading: 'degular-display', sans-serif;
+    --font-family-mono: monospace;
     --font-weight: 500;
     --line-height: 1.5;
     /* -- Font Scale (base on golden ratio) */
@@ -364,6 +365,33 @@ a:hover {
 
 .c-logo svg g {
     mix-blend-mode: screen;
+}
+
+
+/* == Debug */
+
+.c-debug {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: var(--gray-20);
+    color: var(--white);
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-family: var(--font-family-mono);
+    width: 100%;
+}
+
+.c-debug pre {
+    display: inline-block;
+    margin-left: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
+    border-left: 1px solid var(--white);
+}
+
+.c-debug pre:first-child {
+    border-left: 0;
 }
 
 
