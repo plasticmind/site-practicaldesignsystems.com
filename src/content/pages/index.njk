@@ -49,18 +49,7 @@ eleventyNavigation:
     <div class="l-container">
       <h2 class="c-section__title">Daily Emails</h2>
       <div class="c-section__body">
-
-        <form class="c-form">
-        <p>Sign up to get daily bite-sized insights about design systems, product design, and managing people:</p>
-          <div class="c-form__field">
-            <label class="c-form__label" for="email">Email</label>
-            <input class="c-form__input" type="email" id="email" name="email" placeholder="Enter Email Address">
-            <button type="submit" class="c-form__submit" aria-label="Submit">
-              {% include "svg/icon-arrow.svg" %}
-            </button>
-          </div>
-        </form>
-
+        {% include "partials/subscribe.njk" %}
       </div>
     </div>
   </section>

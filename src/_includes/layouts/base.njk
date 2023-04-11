@@ -43,7 +43,14 @@
 
   </body>
   <script>
+
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+    const supportsBlendMode = ('CSS' in window && 'supports' in window.CSS) && window.CSS.supports('mix-blend-mode', 'multiply');
+
+    console.log(supportsBlendMode);
+
     // Select the SVG elements (layers) we want to animate
+    const logo = document.querySelector('.c-logo__icon');
     const layers = document.querySelectorAll('.c-logo__icon g');
     const layer1 = document.querySelector('.c-logo__icon g:first-child');
     const layer2 = document.querySelector('.c-logo__icon g:nth-child(2)');
@@ -59,7 +66,7 @@
     const opacity_start = 0.5;
 
     // Define a scroll threshold (in pixels) where the animation should stop
-    const scrollThreshold = 250;
+    const scrollThreshold = logo.offsetTop - 10;
 
     // Define debounce duration (in milliseconds)
     const debounceDuration = 2;
@@ -67,14 +74,16 @@
     // Variable to store the debounce timer
     let debounceTimer;
 
-    // Set the initial opacity and position of the layers
-    if ( layers !== null) {
-      layers.forEach((layer) => {
-        layer.style.cssText = 'opacity:'+opacity_start+';';
-      });
-      layer1.setAttribute('transform', 'translate('+l1_start+', 0)');
-      layer2.setAttribute('transform', 'translate('+l2_start+', 0)');
-      layer3.setAttribute('transform', 'translate('+l3_start+', 0)');
+    function prepareAnimation() {
+      // Set the initial opacity and position of the layers
+      if ( layers !== null ) {
+        layers.forEach((layer) => {
+          layer.style.cssText = 'opacity:'+opacity_start+';';
+        });
+        layer1.setAttribute('transform', 'translate('+l1_start+', 0)');
+        layer2.setAttribute('transform', 'translate('+l2_start+', 0)');
+        layer3.setAttribute('transform', 'translate('+l3_start+', 0)');
+      }
     }
 
     // Ease our animation
@@ -124,7 +133,10 @@
     }
 
     // Add the debounced scroll event listener to the window
-    window.addEventListener('scroll', debounceScroll);
+    if(supportsBlendMode && !isReduced) {
+      prepareAnimation();
+      window.addEventListener('scroll', debounceScroll);
+    }
 
   </script>
 </html>
