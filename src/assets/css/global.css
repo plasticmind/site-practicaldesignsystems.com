@@ -361,7 +361,9 @@ a:hover {
     margin-bottom: var(--spacing-xxl);
 }
 
-.c-logo__icon svg {}
+.c-logo__icon svg {
+    transform: translate3d(0, 0, 0);
+}
 
 .c-logo svg g {
     mix-blend-mode: screen;
