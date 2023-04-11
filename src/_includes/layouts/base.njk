@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/xhn3otp.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/global.css">    
     <link rel="canonical" href="{{ site.url }}/{% if page.fileSlug %}{{ page.fileSlug }}{% endif %}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.url }}/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.url }}/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="{% if page.fileSlug %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
       <section class="c-site-header">
@@ -41,136 +49,6 @@
         </div>
       </footer>
   </body>
-  <script>
-
-    // Enable debug mode
-    const debug = false;
-
-    // Check if the user prefers reduced motion
-    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-
-    // Check if the browser supports CSS blend modes
-    const supportsBlendMode = ('CSS' in window && 'supports' in window.CSS) && window.CSS.supports('mix-blend-mode', 'multiply');
-
-    // Select the SVG elements (layers) we want to animate
-    const logo = document.querySelector('.c-logo__icon');
-    const layers = document.querySelectorAll('.c-logo__icon g');
-    const layer1 = document.querySelector('.c-logo__icon g:first-child');
-    const layer2 = document.querySelector('.c-logo__icon g:nth-child(2)');
-    const layer3 = document.querySelector('.c-logo__icon g:nth-child(3)');
-
-    // Define starting positions for each layer
-    // Todo: Make these dynamic based on the SVG's viewBox
-    const l1_start = 300;
-    const l2_start = -300;
-    const l3_start = 88;
-
-    // Define a starting opacity
-    const opacity_start = 0.5;
-
-    // Define a scroll threshold (in pixels) where the animation should stop
-    const scrollThreshold = logo.offsetTop - 10;
-
-    // Define debounce duration (in milliseconds)
-    const debounceDuration = 2;
-
-    // Variable to store the debounce timer
-    let debounceTimer;
-
-    function prepareAnimation() {
-      // Set the initial opacity and position of the layers
-      if ( layers !== null ) {
-        layers.forEach((layer) => {
-          layer.style.cssText = 'opacity:'+opacity_start+';';
-        });
-        layer1.setAttribute('transform', 'translate('+l1_start+', 0)');
-        layer2.setAttribute('transform', 'translate('+l2_start+', 0)');
-        layer3.setAttribute('transform', 'translate('+l3_start+', 0)');
-      }
-    }
-
-    // Ease our animation
-    function easeInOutBack(x) {
-      const c1 = 1.70158;
-      const c2 = c1 * 1.525;
-
-      return x < 0.5
-        ? (Math.pow(2 * x, 2) * ((c2 + 1) * 2 * x - c2)) / 2
-        : (Math.pow(2 * x - 2, 2) * ((c2 + 1) * (x * 2 - 2) + c2) + 2) / 2;
-    }
-
-    // Function to handle the scroll event
-    function handleScroll() {
-
-      // Get the current scroll position
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      // Calculate the relative scroll position (0 to 1) based on the scroll threshold
-      const relativeScroll = Math.min(scrollTop / scrollThreshold, 1);
-
-      // Apply easing function to the relative scroll position
-      const easedScroll = easeInOutBack(relativeScroll);
-
-      // Apply translation to the SVG elements based on the scroll position
-
-      layer1pos = l1_start - (easedScroll * l1_start);
-      layer2pos = l2_start - (easedScroll * l2_start);
-      layer3pos = l3_start - (easedScroll * l3_start);
-      layer_opacity = opacity_start + (easedScroll * (1 - opacity_start));
-
-      layers.forEach((layer) => {
-        layer.style.cssText = 'opacity:'+layer_opacity+';';
-      });
-      layer1.setAttribute('transform', 'translate(' + layer1pos + ', 0)');
-      layer2.setAttribute('transform', 'translate(' + layer2pos + ', 0)');
-      layer3.setAttribute('transform', 'translate(' + layer3pos + ', 0)');
-    }
-
-    // Debounced scroll event listener
-    function debounceScroll() {
-      // Clear any existing debounce timer
-      clearTimeout(debounceTimer);
-
-      // Set a new debounce timer
-      debounceTimer = setTimeout(handleScroll, debounceDuration);
-    }    
-
-    // Add the debounced scroll event listener to the window
-    if(supportsBlendMode===true) {
-      prepareAnimation();
-      window.addEventListener('scroll', debounceScroll);
-    }
-
-    // Debug mode
-    if(debug===true) {
-
-      const debug_holder = document.createElement('div');
-
-      debug_holder.classList.add('c-debug');
-
-      const debugTitle = document.createElement('pre');
-        debugTitle.innerHTML = '<b>Debug</b>';
-        debug_holder.appendChild(debugTitle);
-
-      const debugSupportsBlendMode = document.createElement('pre');
-        debugSupportsBlendMode.innerHTML = 'Supports Blend Mode: ' + supportsBlendMode;
-        debug_holder.appendChild(debugSupportsBlendMode);
-        console.log("supportsBlendMode: " + supportsBlendMode);
-
-      const debugIsReduced = document.createElement('pre');
-        debugIsReduced.innerHTML = 'Is Reduced: ' + isReduced;
-        debug_holder.appendChild(debugIsReduced);
-        console.log("isReduced: " + isReduced);
-
-      const debugScrollThreshold = document.createElement('pre');
-        debugScrollThreshold.innerHTML = 'Scroll Threshold: ' + scrollThreshold;
-        debug_holder.appendChild(debugScrollThreshold);
-        console.log("scrollThreshold: " + scrollThreshold);
-
-      document.querySelector('body').appendChild(debug_holder);
-
-    }
-
-
-  </script>
+  {% include "partials/global.js.njk" %}
+{% block scripts %}{% endblock %}
 </html>

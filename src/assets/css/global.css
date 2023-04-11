@@ -1,11 +1,29 @@
 :root {
     /* Foundations */
     /* -- Colors */
+    --red-90: hsl(358, 100%, 90%);
+    --red-80: hsl(358, 100%, 80%);
     --red-50: hsl(358, 100%, 50%);
+    --red-40: hsl(358, 100%, 40%);
+    --red-30: hsl(358, 100%, 30%);
+    --red-20: hsl(358, 100%, 20%);
     --yellow-50: hsl(60, 100%, 75%);
+    --green-90: hsl(149, 100%, 90%);
+    --green-80: hsl(149, 100%, 80%);
     --green-50: hsl(149, 100%, 50%);
+    --green-40: hsl(149, 100%, 40%);
+    --green-30: hsl(149, 100%, 30%);
+    --green-20: hsl(149, 100%, 20%);
+    --cyan-90: hsl(180, 100%, 90%);
+    --cyan-80: hsl(180, 100%, 80%);
     --cyan-50: hsl(180, 100%, 50%);
+    --cyan-40: hsl(180, 100%, 40%);
+    --cyan-30: hsl(180, 100%, 30%);
+    --cyan-20: hsl(180, 100%, 20%);
+    --blue-90: hsl(238, 100%, 90%);
+    --blue-80: hsl(238, 100%, 80%);
     --blue-50: hsl(238, 100%, 50%);
+    --blue-20: hsl(238, 100%, 20%);
     --purple-50: hsl(300, 100%, 50%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
@@ -21,7 +39,7 @@
     /* -- Font Scale (base on golden ratio) */
     --font-scale-ratio: 1.25;
     --font-sm: calc( var(--font-md) / var(--font-scale-ratio));
-    --font-md: 1rem;
+    --font-md: 1.05rem;
     --font-lg: calc( var(--font-md) * var(--font-scale-ratio));
     --font-xl: calc( var(--font-lg) * var(--font-scale-ratio));
     --font-xxl: calc( var(--font-xl) * var(--font-scale-ratio));
@@ -268,7 +286,7 @@ a:hover {
     cursor: pointer;
     color: var(--white);
     border: 0;
-    background: var(--gray-40);
+    background: var(--blue-50);
     padding: var(--spacing-sm) var(--spacing-md);
 }
 
@@ -292,6 +310,89 @@ a:hover {
     transform: translateY(-1px);
     transition: transform var(--transition-sm) var(--transition-easing);
     filter: drop-shadow(1px 2px 0px var(--black));
+}
+
+
+/* == ConvertKit Form */
+
+
+/* == Needs to be especially specific because CK hardcodes inline styles */
+
+.formkit-fields {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-xl) !important;
+}
+
+
+/* Fields */
+
+.formkit-fields>div,
+.formkit-fields>button {
+    flex: 0 0 auto !important;
+    border-radius: var(--border-radius) !important;
+}
+
+
+/* Input field */
+
+.formkit-fields>div {
+    margin-right: var(--spacing-lg) !important;
+    flex: 3 0 auto !important;
+}
+
+.formkit-fields input[type="text"] {
+    border-radius: var(--border-radius) !important;
+}
+
+.formkit-fields:focus-within input[type="text"] {
+    border: 1px solid var(--blue-50) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+
+/* Submit button */
+
+.formkit-fields>button {
+    padding: 0 !important;
+    background-color: var(--blue-50) !important;
+    font-weight: bold !important;
+}
+
+.formkit-fields>button:hover,
+.formkit-fields>button:focus {
+    background-color: var(--gray-20) !important;
+    transform: translateY(-1px);
+    transition: transform var(--transition-sm) var(--transition-easing);
+    filter: drop-shadow(1px 2px 0px var(--gray-80));
+}
+
+.formkit-fields>button:active {
+    background-color: var(--black) !important;
+    transform: translateY(1px);
+    filter: drop-shadow(0);
+}
+
+
+/* Alert */
+
+.formkit-alert {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-sm);
+    border-radius: var(--border-radius) !important;
+    font-weight: bold;
+}
+
+.formkit-alert-error {
+    border-color: var(--red-50) !important;
+    background-color: var(--white) !important;
+    color: var(--red-50) !important;
+}
+
+.formkit-alert-success {
+    border-color: transparent !important;
+    background-color: var(--cyan-50) !important;
+    color: var(--black) !important;
 }
 
 
@@ -367,6 +468,13 @@ a:hover {
 
 .c-logo svg g {
     mix-blend-mode: screen;
+}
+
+
+/* == Simple Utility Classes */
+
+.u-center {
+    text-align: center;
 }
 
 
