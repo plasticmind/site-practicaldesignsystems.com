@@ -11,21 +11,23 @@
     // Check if the browser supports CSS blend modes
     const supportsBlendMode = ('CSS' in window && 'supports' in window.CSS) && window.CSS.supports('mix-blend-mode', 'multiply');
 
-    // Select the SVG elements (layers) we want to animate
+    // Select the SVG elements (shapes) we want to animate
     const logo = document.querySelector('.c-logo__icon');
-    const layers = document.querySelectorAll('.c-logo__icon g');
-    const layer1 = document.querySelector('.c-logo__icon g:first-child');
-    const layer2 = document.querySelector('.c-logo__icon g:nth-child(2)');
-    const layer3 = document.querySelector('.c-logo__icon g:nth-child(3)');
+    const shapes = document.querySelectorAll('.c-logo__icon .c-logo-shape');
+    const shape_outlines = document.querySelectorAll('.c-logo__icon .c-logo-shape--outline');
+    const shape1 = document.querySelector('.c-logo__icon .c-logo-shape__blue');
+    const shape2 = document.querySelector('.c-logo__icon .c-logo-shape__green');
+    const shape3 = document.querySelector('.c-logo__icon .c-logo-shape__red');
 
-    // Define starting positions for each layer
+
+    // Define starting positions for each shape
     // Todo: Make these dynamic based on the SVG's viewBox
-    const l1_start = 300;
-    const l2_start = -300;
-    const l3_start = 88;
+    const s1_start = 300;
+    const s2_start = -300;
+    const s3_start = 88;
 
     // Define a starting opacity
-    const opacity_start = 0.9;
+    const opacity_start = 0;
 
     // Define a scroll threshold (in pixels) where the animation should stop
     const scrollThreshold = logo.offsetTop - 10;
@@ -37,14 +39,14 @@
     let debounceTimer;
 
     function prepareAnimation() {
-        // Set the initial opacity and position of the layers
-        if (layers !== null) {
-            layers.forEach((layer) => {
-                layer.style.cssText = 'opacity:' + opacity_start + ';';
+        // Set the initial opacity and position of the shapes
+        if (shapes !== null) {
+            shapes.forEach((shape) => {
+                shape.style.cssText = 'opacity:' + opacity_start + ';';
             });
-            layer1.setAttribute('transform', 'translate(' + l1_start + ', 0)');
-            layer2.setAttribute('transform', 'translate(' + l2_start + ', 0)');
-            layer3.setAttribute('transform', 'translate(' + l3_start + ', 0)');
+            shape1.setAttribute('transform', 'translate(' + s1_start + ', 0)');
+            shape2.setAttribute('transform', 'translate(' + s2_start + ', 0)');
+            shape3.setAttribute('transform', 'translate(' + s3_start + ', 0)');
         }
     }
 
@@ -72,17 +74,24 @@
 
         // Apply translation to the SVG elements based on the scroll position
 
-        layer1pos = l1_start - (easedScroll * l1_start);
-        layer2pos = l2_start - (easedScroll * l2_start);
-        layer3pos = l3_start - (easedScroll * l3_start);
-        layer_opacity = opacity_start + (easedScroll * (1 - opacity_start));
+        shape1pos = s1_start - (easedScroll * s1_start);
+        shape2pos = s2_start - (easedScroll * s2_start);
+        shape3pos = s3_start - (easedScroll * s3_start);
+        shape_opacity = opacity_start + (easedScroll * (1 - opacity_start));
 
-        layers.forEach((layer) => {
-            layer.style.cssText = 'opacity:' + layer_opacity + ';';
+        // outline opacity should start at 1 and end at 0
+        outline_opacity = 1 - (easedScroll * (1 - opacity_start));
+        
+
+        shapes.forEach((shape) => {
+            shape.style.cssText = 'opacity:' + shape_opacity + ';';
         });
-        layer1.setAttribute('transform', 'translate(' + layer1pos + ', 0)');
-        layer2.setAttribute('transform', 'translate(' + layer2pos + ', 0)');
-        layer3.setAttribute('transform', 'translate(' + layer3pos + ', 0)');
+        shape_outlines.forEach((outline) => {
+            outline.style.cssText = 'opacity:' + outline_opacity + ';';
+        });
+        shape1.setAttribute('transform', 'translate(' + shape1pos + ', 0)');
+        shape2.setAttribute('transform', 'translate(' + shape2pos + ', 0)');
+        shape3.setAttribute('transform', 'translate(' + shape3pos + ', 0)');
     }
 
     // Debounced scroll event listener
@@ -124,7 +133,7 @@
         }
     });
 
-    // when a div with the data-element="success" attribute is added to the DOM, fire the confetti function
+    // Fire confetti when successful newsletter submission
 
     const observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
@@ -132,7 +141,6 @@
                 for (let i = 0; i < mutation.addedNodes.length; i++) {
                     if (mutation.addedNodes[i].dataset.element === "success") {
                         confetti();
-        				console.log('Email submitted successfully!');
 				        observer.disconnect();
                     }
                 }

@@ -27,6 +27,7 @@
     --purple-50: hsl(300, 100%, 50%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
+    --gray-90: hsl(200, 5%, 90%);
     --gray-80: hsl(200, 5%, 80%);
     --gray-40: hsl(200, 5%, 40%);
     --gray-20: hsl(200, 5%, 20%);
@@ -131,7 +132,7 @@ h4,
 h5 {
     font-family: var(--font-family-heading);
     line-height: 1.1;
-    color: var(--gray-40);
+    color: var(--gray-20);
     margin: 0;
     padding: 0 0 var(--spacing-md);
     letter-spacing: 1px;
@@ -232,10 +233,15 @@ a {
     transition: all var(--transition-md) var(--transition-easing);
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: var(--black);
     background-size: 100% 90%;
     transition: all var(--transition-sm) var(--transition-easing);
+}
+
+a:focus {
+    background-size: 100% 100%;
 }
 
 
@@ -353,18 +359,23 @@ a:hover {
 
 /* Submit button */
 
-.formkit-fields>button {
+.formkit-fields>button,
+.formkit-submit {
     padding: 0 !important;
     background-color: var(--blue-50) !important;
     font-weight: bold !important;
+    border: solid 1px transparent !important;
+    transition: all var(--transition-md) var(--transition-easing);
 }
 
 .formkit-fields>button:hover,
-.formkit-fields>button:focus {
+.formkit-fields>button:focus,
+.formkit-submit:hover,
+.formkit-submit:focus {
     background-color: var(--gray-20) !important;
     transform: translateY(-1px);
-    transition: transform var(--transition-sm) var(--transition-easing);
     filter: drop-shadow(1px 2px 0px var(--gray-80));
+    transition: all var(--transition-sm) var(--transition-easing);
 }
 
 .formkit-fields>button:active {
@@ -420,34 +431,78 @@ a:hover {
 /* == Site Footer */
 
 .c-site-footer {
-    padding: var(--spacing-xl) 0 0 0;
+    padding: var(--spacing-xl) 0;
     margin: 0 auto;
 }
 
-.c-site-footer ul {
+
+/* == Social Links */
+
+.c-social-links ul {
     display: grid;
-    max-width: calc( 100% - var(--spacing-xxl));
+    max-width: calc( 100% - var(--spacing-lg));
     align-items: top;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: var(--spacing-xxl);
-    grid-gap: var(--spacing-md);
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: var(--spacing-lg);
+    grid-gap: var(--spacing-lg) var(--spacing-xxl);
 }
 
-.c-site-footer li {}
+.c-social-links li {
+    white-space: nowrap;
+}
 
-.c-site-footer .c-link__icon {
+.c-social-links .c-link__icon {
     display: inline-block;
     margin: 0 var(--spacing-md) 0 0;
     transform: translateY(2px);
 }
 
-.c-site-footer .c-link__icon svg {
+.c-social-links .c-link__icon svg {
     max-width: 16px;
     height: auto;
 }
 
-.c-site-footer .c-link__icon svg path {
+.c-social-links .c-link__icon svg path {
     fill: var(--gray-40) !important;
+}
+
+.c-social-links a {
+    opacity: 0.5;
+    background-size: 100% 0%;
+    padding: 0;
+    background-image: linear-gradient(var(--gray-20), var(--gray-20));
+}
+
+.c-social-links a:hover,
+.c-social-links a:focus {
+    opacity: 1;
+    background-size: 100% 6%;
+}
+
+
+/* == Site Footer Nav */
+
+.c-nav {
+    font-size: var(--font-lg);
+    margin: 0 auto;
+    max-width: var(--max-width-lg);
+}
+
+.c-nav hr {
+    border: 0;
+    border-top: 1px solid var(--gray-90);
+    margin: var(--spacing-xl) 0;
+}
+
+.c-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: var(--spacing-xl) auto;
+}
+
+.c-nav li {
+    margin: 0 var(--spacing-xl);
 }
 
 
@@ -466,8 +521,13 @@ a:hover {
     transform: translate3d(0, 0, 0);
 }
 
-.c-logo svg g {
+.c-logo__icon .c-logo-shape {
     mix-blend-mode: screen;
+}
+
+.c-logo__icon .c-logo-shape--outline path {
+    stroke: var(--gray-20);
+    stroke-dasharray: 5 10;
 }
 
 
@@ -528,7 +588,14 @@ a:hover {
     .l-grid--2-col {
         grid-template-columns: repeat(1, 1fr);
     }
-    .c-site-footer ul {
-        margin-left: var(--spacing-xl);
+    .c-nav {
+        font-size: var(--font-md);
+    }
+    .c-nav li {
+        margin: 0 var(--spacing-lg);
+    }
+    .c-social-links ul {
+        margin-left: var(--spacing-md);
+        grid-gap: var(--spacing-lg);
     }
 }
