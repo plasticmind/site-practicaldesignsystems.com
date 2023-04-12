@@ -574,7 +574,14 @@ a:focus {
     .c-logo__wordmark {
         margin-bottom: var(--spacing-xl);
     }
-    .c-logo__icon svg {}
+    .c-logo__icon {
+        width: 300%;
+        overflow: hidden;
+        margin-left: calc(var(--spacing-lg) * -1);
+    }
+    .c-logo__icon svg {
+        margin-left: -66%;
+    }
     .c-section {
         padding: var(--spacing-xl) 0;
     }
@@ -592,7 +599,8 @@ a:focus {
         font-size: var(--font-md);
     }
     .c-nav li {
-        margin: 0 var(--spacing-lg);
+        margin: 0 var(--spacing-md);
+        white-space: nowrap;
     }
     .c-social-links ul {
         margin-left: var(--spacing-md);
