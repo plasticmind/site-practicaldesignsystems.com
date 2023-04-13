@@ -29,6 +29,9 @@
     --white: hsl(0, 0%, 100%);
     --gray-90: hsl(200, 5%, 90%);
     --gray-80: hsl(200, 5%, 80%);
+    --gray-70: hsl(200, 5%, 70%);
+    --gray-60: hsl(200, 5%, 60%);
+    --gray-50: hsl(200, 5%, 50%);
     --gray-40: hsl(200, 5%, 40%);
     --gray-20: hsl(200, 5%, 20%);
     /* -- Typography */
@@ -147,6 +150,10 @@ h2 {
     font-size: var(--font-xxl);
 }
 
+h4 {
+    font-size: var(--font-sm);
+}
+
 
 /* Layout */
 
@@ -184,12 +191,20 @@ h2 {
     grid-column: span 6;
 }
 
-.l-grid--2-col .l-grid__item--wide {
+.l-grid--2-col .l-grid__item--xl {
+    grid-column: span 9;
+}
+
+.l-grid--2-col .l-grid__item--lg {
     grid-column: span 7;
 }
 
-.l-grid--2-col .l-grid__item--narrow {
+.l-grid--2-col .l-grid__item--sm {
     grid-column: span 5;
+}
+
+.l-grid--2-col .l-grid__item--xs {
+    grid-column: span 3;
 }
 
 
@@ -259,63 +274,93 @@ a:focus {
 
 /* == Form */
 
-.c-form {
-    text-align: center;
-    margin: 0 auto;
-}
 
-.c-form__field {
-    max-width: 80%;
-    margin: 0 auto;
+/* Form fields styled */
+
+.c-form {
     display: flex;
-    align-items: center;
-    border: 2px solid var(--gray-40);
+    flex-direction: column;
+    justify-content: center;
+    /* put all fields in 2 columns */
+    padding-bottom: var(--spacing-xxl);
 }
 
 .c-form__label {
-    display: none;
+    display: block;
+    font-size: var(--font-lg);
 }
 
-.c-form__input {
-    flex: 1;
-    margin: 0;
-    border: 0;
-    padding: var(--spacing-sm) var(--spacing-md);
+.c-form__input,
+.c-form__textarea,
+.c-form__select {
+    margin: 0 0 var(--spacing-xl);
+    padding: var(--spacing-md) 0;
+    border: 1px solid var(--gray-80);
+    border-width: 0 0 1px 0;
+    border-radius: var(--border-radius);
+    font-size: var(--font-lg);
+    color: var(--blue-50);
 }
 
-.c-form__input:focus {
-    outline: 0;
-    border-radius: 0;
+.c-form__input::placeholder,
+.c-form__textarea::placeholder,
+.c-form__select:invalid,
+.c-form__select option[value=""] {
+    color: var(--gray-50);
+    font-size: var(--font-md);
+    font-weight: normal;
 }
 
-.c-form__submit {
+.c-form__input:focus,
+.c-form__select:focus,
+.c-form__textarea:focus {
+    border-width: 0 0 2px 0;
+    border-color: var(--blue-50);
+    color: var(--blue-50);
+    outline: none;
+}
+
+.u-required::after {
+    content: " * ";
+    font-weight: bold;
+    color: var(--red-50);
+}
+
+.c-form__select {
     cursor: pointer;
+}
+
+.c-form__textarea {
+    min-height: 150px;
+}
+
+.c-form__button {
+    margin: 0 0 var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-xxl);
+    border-radius: var(--border-radius);
     color: var(--white);
-    border: 0;
     background: var(--blue-50);
-    padding: var(--spacing-sm) var(--spacing-md);
+    transition: all var(--transition-md) var(--transition-easing);
+    display: inline-block;
+    font-weight: bold;
+    font-size: var(--font-md);
+    align-self: flex-end;
 }
 
-.c-form__submit svg {
-    fill: var(--white);
-    width: 70%;
-    vertical-align: middle;
-}
-
-.c-form__field:focus-within {
-    border: 2px solid var(--blue-50);
-}
-
-.c-form__field:focus-within .c-form__submit {
-    outline: 0;
-    background: var(--blue-50);
-}
-
-.c-form__submit:focus svg,
-.c-form__submit:hover svg {
-    transform: translateY(-1px);
+.c-form__button:hover,
+.c-form__button:focus {
+    outline: none;
+    background-color: var(--gray-20);
+    border-radius: var(--border-radius);
+    transform: translateY(-2px);
+    filter: drop-shadow(1px 2px 0px var(--gray-80));
     transition: transform var(--transition-sm) var(--transition-easing);
-    filter: drop-shadow(1px 2px 0px var(--black));
+}
+
+.c-form__button:active {
+    background-color: var(--black) !important;
+    transform: translateY(2px);
+    filter: drop-shadow(0);
 }
 
 
@@ -366,6 +411,7 @@ a:focus {
     font-weight: bold !important;
     border: solid 1px transparent !important;
     transition: all var(--transition-md) var(--transition-easing);
+    font-size: var(--font-sm);
 }
 
 .formkit-fields>button:hover,
@@ -438,6 +484,10 @@ a:focus {
 
 /* == Site Logo */
 
+.c-logo a {
+    background: 0;
+}
+
 .c-logo svg {
     max-width: 90%;
     height: auto;
@@ -479,6 +529,23 @@ a:focus {
 .c-logo--icon .c-logo__shape--outline path {
     stroke: var(--gray-20);
     stroke-dasharray: 5 10;
+}
+
+
+/* == Contact Card */
+
+.c-contact__item {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.c-contact__title {
+    margin-bottom: var(--spacing-md);
+    color: var(--gray-60);
+    font-size: var(--font-sm);
+}
+
+address {
+    font-style: normal;
 }
 
 

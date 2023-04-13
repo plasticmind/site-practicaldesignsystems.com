@@ -13,23 +13,65 @@ eleventyNavigation:
 {% block content %}
   <section class="c-section">
     <div class="l-container--lg">
-      <h1 class="c-section__title">Reaching Out</h1>
-      <p class="c-tagline__subtitle">Every weekday, I send out a short email with advice for improving collaboration and communication between design and engineering teams.</p> 
+      <h1 class="c-section__title">Let's Work Together!</h1>
+      <p class="c-tagline__subtitle">Need help putting together a road map for your organization's design system? Want to schedule a call to discuss a specific challenge your team is facing? I'm available for 1-on-1 calls, workshops, speaking engagements, and consulting.</p>
+      <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+      <hr class="c-hr">
+      <div class="l-grid l-grid--2-col">
+        <div class="l-grid__item--xl">
+          <form class="c-form" action="https://getform.io/f/fcb37bb2-54d2-4645-8e19-289615fd9867" method="POST" enctype="multipart/form-data">
+              <label class="c-form__label u-required" for="name">What's your name?</label>
+              <input class="c-form__input" type="text" name="name" placeholder="Type your full name" required/>
+              <label class="c-form__label u-required" for="email">What's your email address?</label>
+              <input class="c-form__input" type="email" name="email" placeholder="rockstar@example.com" required>
+              <label class="c-form__label" for="phone">What's your phone number?</label>
+              <input class="c-form__input" type="tel" name="phone" placeholder="+1 123-456-7890">
 
-<form class="c-form" action="https://getform.io/f/fcb37bb2-54d2-4645-8e19-289615fd9867" method="POST">
-    <input class="c-form__input" type="text" name="name">
-    <input class="c-form__input" type="email" name="email">
-    <input type="text" name="message">
-    <!-- add hidden docheiomeliou input to prevent spams -->
-    <input type="hidden" name="_docheiomeliou" style="display:none !important">
-    <!-- select field handle -->
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select>
-    <button type="submit">Send</button>
-</form>
+              <label class="c-form__label" for="company">What's your organization's name?</label>
+              <input class="c-form__input" type="text" name="organization" placeholder="Type your organization's name">
+              <label class="c-form__label u-required" for="services">Which service are you most interested in?</label>
+              <select class="c-form__select" name="services" required>
+                <option value="">Select a service</option>
+                <option value="design-system-audit">Design System Audit</option>
+                <option value="design-system-pilot">Design System Pilot</option>
+                <option value="design-system-workshop">Design System Training/Workshop</option>
+                <option value="design-system-mentoring">Design System Coaching</option>
+                <option value="1-on-1-call">1-on-1 Call</option>
+              </select>
 
+              <label class="c-form__label u-required" for="budget">What is your budget for this project?</label>
+              <select class="c-form__select" name="budget" required>
+                <option value="">Select a budget range</option>
+                <option value="less-than-10k">Less than $10,000</option>
+                <option value="10k-50k">$10,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-500k">$100,000 - $500,000</option>
+                <option value="500k-1m">$500,000 - $1,000,000</option>
+                <option value="1m-plus">$1,000,000+</option>
+              </select>
+
+              <label class="c-form__label u-required" for="message">How can we work together?</label>
+              <textarea data-autoresize rows="2" class="c-form__textarea" name="message" placeholder="Tell me as much as you can about your idea of working together. What goals would you like help meeting? Do you already have a design system? Do you need help creating one? Would you like to set up a call to discuss further?" required oninput="this.setAttribute('size',this.value.length||=1)"></textarea>
+
+              <!-- add hidden docheiomeliou input to prevent spams -->
+              <input type="hidden" name="_docheiomeliou" style="display:none !important">
+              <!-- select field handle -->
+              <span><b class="u-required"></b> = required field</span>
+              <button type="submit" class="c-form__button">Send</button>
+          </form>
+        </div>
+        <div class="l-grid__item--xs">
+          <div class="c-contact">
+            <h4 class="c-contact__title">Contact</h4>
+            <div class="c-contact__item">
+              <a href="tel:+1-267-328-8877">+1-267-328-8877</a>
+            </div>
+
+            <h4 class="c-contact__title">Address</h4>            
+            <div class="c-contact__item"><address>Melrose, NY 12121</address></div>
+
+          </div>
+        </div>
     </div>
   </section>
 {% endblock %}

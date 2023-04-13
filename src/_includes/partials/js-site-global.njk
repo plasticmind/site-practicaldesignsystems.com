@@ -29,8 +29,8 @@
     // Define a starting opacity
     const opacity_start = 0;
 
-    // Define a scroll threshold (in pixels) where the animation should stop
-    const scrollThreshold = logo.offsetTop - 50;
+    // Define a scroll threshold (in pixels) where the animation should stop (only if logo exists)
+    const scrollThreshold = logo ? logo.offsetTop - 100 : 0;
 
     // Define debounce duration (in milliseconds)
     const debounceDuration = 2;
@@ -114,25 +114,27 @@
 
     // Get the testimonials and update the HTML
     const testimonialElements = document.querySelectorAll(".c-testimonial");
-    testimonialElements.forEach((element, i) => {
-        const testimonial = testimonials[randomIndexes[i]];
-        const testimonialText = testimonial.text;
-        const testimonialAuthor = testimonial.author;
-        element.querySelector(".c-testimonial__text").textContent = `"${testimonialText}"`;
-        element.querySelector(".c-testimonial__author").textContent = `- ${testimonialAuthor}`;
-        // Create anchor tag if link is provided
-        if (testimonial.link) {
-            const testimonialLink = testimonial.link;
-            const testimonialLinkElement = document.createElement("a");
-            testimonialLinkElement.setAttribute("href", testimonialLink);
-            testimonialLinkElement.setAttribute("target", "_blank");
-            testimonialLinkElement.setAttribute("rel", "noopener noreferrer");
-            testimonialLinkElement.setAttribute("title", "More about " + testimonialAuthor + " →");
-            testimonialLinkElement.textContent = testimonialAuthor;
-            element.querySelector(".c-testimonial__author").innerHTML = `- `;
-            element.querySelector(".c-testimonial__author").appendChild(testimonialLinkElement);
-        }
-    });
+    if (testimonialElements.length !== null) {
+        testimonialElements.forEach((element, i) => {
+            const testimonial = testimonials[randomIndexes[i]];
+            const testimonialText = testimonial.text;
+            const testimonialAuthor = testimonial.author;
+            element.querySelector(".c-testimonial__text").textContent = `"${testimonialText}"`;
+            element.querySelector(".c-testimonial__author").textContent = `- ${testimonialAuthor}`;
+            // Create anchor tag if link is provided
+            if (testimonial.link) {
+                const testimonialLink = testimonial.link;
+                const testimonialLinkElement = document.createElement("a");
+                testimonialLinkElement.setAttribute("href", testimonialLink);
+                testimonialLinkElement.setAttribute("target", "_blank");
+                testimonialLinkElement.setAttribute("rel", "noopener noreferrer");
+                testimonialLinkElement.setAttribute("title", "More about " + testimonialAuthor + " →");
+                testimonialLinkElement.textContent = testimonialAuthor;
+                element.querySelector(".c-testimonial__author").innerHTML = `- `;
+                element.querySelector(".c-testimonial__author").appendChild(testimonialLinkElement);
+            }
+        });
+    }
 
     // Fire confetti when successful newsletter submission
 
@@ -149,16 +151,39 @@
         });
     });
     
-    observer.observe(document.querySelector('.js-subscribe-form'), {
-        childList: true,
-        subtree: true
-    });
-
-    // == Add the debounced scroll event listener to the window
-    if (supportsBlendMode === true) {
-        prepareAnimation();
-        window.addEventListener('scroll', debounceScroll);
+    if (document.querySelector('.js-subscribe-form')) {
+        observer.observe(document.querySelector('.js-subscribe-form'), {
+            childList: true,
+            subtree: true
+        });
     }
+
+    // Thanks, Stephan! https://stephanwagner.me/auto-resizing-textarea-with-vanilla-javascript
+    function addAutoResize() {
+        document.querySelectorAll('[data-autoresize]').forEach(function (element) {
+            element.style.boxSizing = 'border-box';
+            var offset = element.offsetHeight - element.clientHeight;
+            element.addEventListener('input', function (event) {
+            event.target.style.height = 'auto';
+            event.target.style.height = event.target.scrollHeight + offset + 'px';
+            });
+            element.removeAttribute('data-autoresize');
+        });
+    }
+
+    // After DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // == Auto-resize textarea elements
+        addAutoResize();
+
+        // == Add the debounced scroll event listener to the window
+        if (supportsBlendMode === true && shape1 !== null) {
+            prepareAnimation();
+            window.addEventListener('scroll', debounceScroll);
+        }
+
+    });
 
     // Debug mode
     if (debug === true) {
