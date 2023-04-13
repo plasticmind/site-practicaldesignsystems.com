@@ -1,0 +1,35 @@
+---
+permalink: /contact/
+pageTitle: "Contact"
+pageDescription: "Let's connect and streamline your design process together."
+eleventyNavigation:
+  key: Contact
+  title: Contact
+  order: 4
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="c-section">
+    <div class="l-container--lg">
+      <h1 class="c-section__title">Reaching Out</h1>
+      <p class="c-tagline__subtitle">Every weekday, I send out a short email with advice for improving collaboration and communication between design and engineering teams.</p> 
+
+<form class="c-form" action="https://getform.io/f/fcb37bb2-54d2-4645-8e19-289615fd9867" method="POST">
+    <input class="c-form__input" type="text" name="name">
+    <input class="c-form__input" type="email" name="email">
+    <input type="text" name="message">
+    <!-- add hidden docheiomeliou input to prevent spams -->
+    <input type="hidden" name="_docheiomeliou" style="display:none !important">
+    <!-- select field handle -->
+    <select name="work-experience">
+        <option value="one-year">0-1 years</option>
+        <option value="one-five-years">1-5 years</option>
+    </select>
+    <button type="submit">Send</button>
+</form>
+
+    </div>
+  </section>
+{% endblock %}

@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ site.title }}</title>
+    <title>{% if currentSectionId != 'home' %}{% if pageTitle %}{{ pageTitle | safe }} \\ {% endif %}{% endif %}{{ site.title }}</title>
 
     {% include "partials/head-meta.njk" %}
-
-    <link rel="stylesheet" href="https://use.typekit.net/xhn3otp.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/global.css">    
+    
     {% block styles %}{% endblock %}
 
   </head>
-  <body class="{% if page.fileSlug %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
-      <section class="c-site-header">
-        <div class="l-container">
-          <div class="c-logo">
-            <div class="c-logo__wordmark">{% include "svg/logo-pds-wordmark.svg" %}</div>
-          </div>
-        </div>
-        <div class="l-container--xl">
-          <div class="c-logo">
-            <div class="c-logo__icon">{% include "svg/logo-pds-icon.svg" %}</div>
-          </div>
-        </div>
-      </section>
+  <body class="{% if currentSectionId  %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
+
+      {% if currentSectionId == 'home' %}
+        {% include "partials/site-header-large.njk" %}
+      {% else %}
+        {% include "partials/site-header.njk" %}
+      {% endif %}
+
       <main class="c-site-content" role="main">
         {% block content %}
         {{ content | safe }}
         {% endblock %}
       </main>
 
-      {% include "partials/site-nav.njk" %}
       {% include "partials/site-footer.njk" %}
+
   </body>
-  {% include "partials/global.js.njk" %}
-{% block scripts %}{% endblock %}
+  {% include "partials/js-site-global.njk" %}
+  {% block scripts %}{% endblock %}
 </html>

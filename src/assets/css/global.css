@@ -209,11 +209,11 @@ h2 {
 }
 
 .c-section__title {
-    text-align: center;
+    text-align: left;
 }
 
-.c-section__title--left {
-    text-align: left;
+.c-section__title--center {
+    text-align: center;
 }
 
 
@@ -319,7 +319,7 @@ a:focus {
 }
 
 
-/* == ConvertKit Form */
+/* == Form Elements */
 
 
 /* == Needs to be especially specific because CK hardcodes inline styles */
@@ -410,9 +410,9 @@ a:focus {
 /* == Site Header */
 
 .c-site-header {
-    position: relative;
     text-align: center;
-    padding: var(--spacing-xxxl) 0 0 0;
+    position: relative;
+    padding: var(--spacing-xxl) 0 var(--spacing-xxl);
     margin: 0 auto;
 }
 
@@ -424,7 +424,43 @@ a:focus {
     display: block;
     background: linear-gradient(180deg, var(--gray-80) 0%, var(--white) 100%);
     width: 100%;
-    height: 180px;
+    height: 150px;
+}
+
+.c-site-header--lg {
+    padding: var(--spacing-xxxl) 0 0 0;
+}
+
+.c-site-header--lg:before {
+    height: 250px;
+}
+
+
+/* == Site Logo */
+
+.c-logo svg {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    /* Fixes mix-blend-mode issues on Safari */
+    transform: translate3d(0, 0, 0);
+}
+
+.c-logo--full svg {
+    max-width: 50%;
+}
+
+.c-logo__shape {
+    mix-blend-mode: screen;
+}
+
+.c-logo--wordmark {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.c-logo--icon .c-logo__shape--outline path {
+    stroke: var(--gray-20);
+    stroke-dasharray: 5 10;
 }
 
 
@@ -480,18 +516,22 @@ a:focus {
 }
 
 
+/* == HR */
+
+.c-hr {
+    border: 0;
+    border-top: 1px solid var(--gray-90);
+    margin: var(--spacing-xl) auto;
+    max-width: var(--max-width-lg);
+}
+
+
 /* == Site Footer Nav */
 
 .c-nav {
     font-size: var(--font-lg);
     margin: 0 auto;
     max-width: var(--max-width-lg);
-}
-
-.c-nav hr {
-    border: 0;
-    border-top: 1px solid var(--gray-90);
-    margin: var(--spacing-xl) 0;
 }
 
 .c-nav ul {
@@ -503,31 +543,6 @@ a:focus {
 
 .c-nav li {
     margin: 0 var(--spacing-xl);
-}
-
-
-/* == Site Logo */
-
-.c-logo svg {
-    max-width: 90%;
-    height: auto;
-}
-
-.c-logo__wordmark {
-    margin-bottom: var(--spacing-xxl);
-}
-
-.c-logo__icon svg {
-    transform: translate3d(0, 0, 0);
-}
-
-.c-logo__icon .c-logo-shape {
-    mix-blend-mode: screen;
-}
-
-.c-logo__icon .c-logo-shape--outline path {
-    stroke: var(--gray-20);
-    stroke-dasharray: 5 10;
 }
 
 
@@ -569,17 +584,31 @@ a:focus {
 
 @media screen and (max-width: 768px) {
     .c-site-header {
+        text-align: left;
+        padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+    }
+    .c-site-header::before {
+        height: 50px;
+    }
+    .c-site-header--lg {
+        text-align: center;
         padding: var(--spacing-xxl) 0 0 0;
     }
-    .c-logo__wordmark {
+    .c-site-header--lg::before {
+        height: 100px;
+    }
+    .c-logo--full svg {
+        max-width: 45%;
+    }
+    .c-logo--wordmark {
         margin-bottom: var(--spacing-xl);
     }
-    .c-logo__icon {
+    .c-logo--icon {
         width: 300%;
         overflow: hidden;
         margin-left: calc(var(--spacing-lg) * -1);
     }
-    .c-logo__icon svg {
+    .c-logo--icon svg {
         margin-left: -66%;
     }
     .c-section {

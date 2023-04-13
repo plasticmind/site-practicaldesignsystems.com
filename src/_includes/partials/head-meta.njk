@@ -1,11 +1,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+    {% if pageDescription %}
+    <meta name="description" content="{{ pageDescription }}">
     {% endif %}   
 
-    <link rel="canonical" href="{{ site.url }}/{% if page.fileSlug %}{{ page.fileSlug }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{% if permalink %}{{ permalink }}{% endif %}">
+
+    <link rel="stylesheet" href="https://use.typekit.net/xhn3otp.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/global.css">    
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">

@@ -12,12 +12,12 @@
     const supportsBlendMode = ('CSS' in window && 'supports' in window.CSS) && window.CSS.supports('mix-blend-mode', 'multiply');
 
     // Select the SVG elements (shapes) we want to animate
-    const logo = document.querySelector('.c-logo__icon');
-    const shapes = document.querySelectorAll('.c-logo__icon .c-logo-shape');
-    const shape_outlines = document.querySelectorAll('.c-logo__icon .c-logo-shape--outline');
-    const shape1 = document.querySelector('.c-logo__icon .c-logo-shape__blue');
-    const shape2 = document.querySelector('.c-logo__icon .c-logo-shape__green');
-    const shape3 = document.querySelector('.c-logo__icon .c-logo-shape__red');
+    const logo = document.querySelector('.c-logo--icon');
+    const shapes = document.querySelectorAll('.c-logo--icon .c-logo__shape');
+    const shape_outlines = document.querySelectorAll('.c-logo--icon .c-logo__shape--outline');
+    const shape1 = document.querySelector('.c-logo--icon .c-logo__shape--blue');
+    const shape2 = document.querySelector('.c-logo--icon .c-logo__shape--green');
+    const shape3 = document.querySelector('.c-logo--icon .c-logo__shape--red');
 
 
     // Define starting positions for each shape
@@ -127,6 +127,7 @@
             testimonialLinkElement.setAttribute("href", testimonialLink);
             testimonialLinkElement.setAttribute("target", "_blank");
             testimonialLinkElement.setAttribute("rel", "noopener noreferrer");
+            testimonialLinkElement.setAttribute("title", "More about " + testimonialAuthor + " →");
             testimonialLinkElement.textContent = testimonialAuthor;
             element.querySelector(".c-testimonial__author").innerHTML = `- `;
             element.querySelector(".c-testimonial__author").appendChild(testimonialLinkElement);
