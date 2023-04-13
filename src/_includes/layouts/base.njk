@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{% if currentSectionId != 'home' %}{% if pageTitle %}{{ pageTitle | safe }} \\ {% endif %}{% endif %}{{ site.title }}</title>
+    <title>{% if section != 'home' %}{% if title %}{{ title | safe }} \\ {% endif %}{% endif %}{{ site.title }}</title>
 
     {% include "partials/head-meta.njk" %}
     
     {% block styles %}{% endblock %}
 
   </head>
-  <body class="{% if currentSectionId  %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
+  <body class="{% if section  %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
 
-      {% if currentSectionId == 'home' %}
+      {% if section == 'home' %}
         {% include "partials/site-header-large.njk" %}
       {% else %}
         {% include "partials/site-header.njk" %}

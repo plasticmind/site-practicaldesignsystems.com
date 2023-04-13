@@ -1,0 +1,18 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<section class="c-section c-section--article">
+  <div class="l-container--lg">
+    <time datetime="{{ page.date | dateISO }}" class="c-kicker">
+      {{ page.date | dateFull }}
+    </time>
+    
+    <h1 class="c-heading c-heading--lg">{{ title }}</h1>
+    {{ content | safe }}
+    <p>—<br>
+      Cheers,<br>
+      <img class="c-img" style="max-width:120px;height:auto;margin: -27px 0 0 -15px" src="/assets/img/signature.png" alt="Jesse Gardner">
+    </p>
+  </div>
+</section>
+{% endblock %}

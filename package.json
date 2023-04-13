@@ -21,7 +21,9 @@
         "@11ty/eleventy-fetch": "^4.0.0",
         "@11ty/eleventy-navigation": "^0.3.5",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
-        "eleventy-plugin-metagen": "^1.7.11"
+        "eleventy-plugin-metagen": "^1.7.11",
+        "lodash": "^4.17.21",
+        "luxon": "^3.3.0"
     },
     "Dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
