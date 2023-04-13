@@ -450,6 +450,24 @@ a:focus {
     max-width: 50%;
 }
 
+
+/* Fun "squeeze" animation on hover */
+
+.c-logo--full .c-logo__shape {
+    cursor: ns-resize;
+    transition: transform var(--transition-sm) var(--transition-easing);
+}
+
+.c-logo--full:hover .c-logo__shape:first-child {
+    transform: translateY(-15px);
+    transition: transform var(--transition-lg) var(--transition-easing);
+}
+
+.c-logo--full:hover .c-logo__shape:nth-child(3) {
+    transform: translateY(15px);
+    transition: transform var(--transition-lg) var(--transition-easing);
+}
+
 .c-logo__shape {
     mix-blend-mode: screen;
 }
