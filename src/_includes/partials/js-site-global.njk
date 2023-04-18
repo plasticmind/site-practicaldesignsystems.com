@@ -31,7 +31,6 @@
 
     // Define a scroll threshold (in pixels) where the animation should stop (only if logo exists)
     const scrollThreshold = logo ? logo.offsetTop + 50 : 0;
-    console.log(logo.offsetTop);
 
     // Define debounce duration (in milliseconds)
     const debounceDuration = 2;
@@ -133,6 +132,21 @@
                 testimonialLinkElement.textContent = testimonialAuthor;
                 element.querySelector(".c-testimonial__author").innerHTML = `- `;
                 element.querySelector(".c-testimonial__author").appendChild(testimonialLinkElement);
+            }
+        });
+    }
+
+    /* Select form option based on query string */
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const formOption = urlParams.get('service');
+    // console.log(formOption);
+    if (formOption) {
+        const formOptions = document.querySelectorAll('.c-form__select[name="services"] option');
+        formOptions.forEach((option) => {
+            // console.log(option);
+            if (option.value === formOption) {
+                option.setAttribute('selected', 'selected');
             }
         });
     }
