@@ -282,7 +282,7 @@ blockquote>p {
 /* == Section */
 
 .c-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl) 0;
     background: var(--white);
 }
 
@@ -593,7 +593,7 @@ a:focus {
 }
 
 .c-logo--wordmark {
-    margin-bottom: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xl);
 }
 
 .c-logo--icon .c-logo__shape--outline path {
