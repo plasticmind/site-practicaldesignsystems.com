@@ -784,6 +784,45 @@ hr,
 }
 
 
+/* Simple class for wiggling an element */
+
+.u-wiggle {
+    cursor: grab;
+    display: inline-block;
+    animation: wiggle var(--transition-sm) infinite;
+}
+
+.u-wiggle-hover {
+    cursor: grab;
+    display: inline-block;
+}
+
+.u-wiggle-hover:hover {
+    animation: wiggle var(--transition-sm) infinite;
+}
+
+
+/* Fast random wiggle animation */
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 /* == Debug */
 
 .c-debug {
