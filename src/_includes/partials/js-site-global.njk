@@ -22,15 +22,16 @@
 
     // Define starting positions for each shape
     // Todo: Make these dynamic based on the SVG's viewBox
-    const s1_start = 300;
-    const s2_start = -300;
-    const s3_start = 88;
+    const s1_start = 75;
+    const s2_start = -75;
+    const s3_start = 22;
 
     // Define a starting opacity
     const opacity_start = 0;
 
     // Define a scroll threshold (in pixels) where the animation should stop (only if logo exists)
-    const scrollThreshold = logo ? logo.offsetTop - 100 : 0;
+    const scrollThreshold = logo ? logo.offsetTop + 50 : 0;
+    console.log(logo.offsetTop);
 
     // Define debounce duration (in milliseconds)
     const debounceDuration = 2;
