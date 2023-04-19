@@ -632,6 +632,13 @@ address {
     color: var(--gray-70);
 }
 
+.c-legal a {
+    padding: 0;
+    color: var(--gray-70);
+    background: none;
+    text-decoration: underline;
+}
+
 
 /* == Social Links */
 
