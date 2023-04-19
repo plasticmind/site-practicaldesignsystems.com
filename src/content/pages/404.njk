@@ -1,0 +1,33 @@
+---
+permalink: 404.html
+pageTitle: "🚨 404 🚨"
+pageDescription: "Zoinks! This URL doesn't resolve to any page."
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="c-section">
+    <div class="l-container--lg u-center">
+      <style>
+        .c-logo--icon g.c-logo__shape--outline {
+          opacity: 1 !important;
+        }
+        .c-logo--icon g.c-logo__shape {
+          display: none;
+        }
+      </style>
+      <div class="c-logo">
+        <div class="c-logo--icon">{% include "svg/logo-pds-icon.svg" %}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section">
+    <div class="l-container--lg">
+      <h1 class="c-section__title u-center">Zoinks!</h1>
+      <p class="c-section__text u-center">The URL you've reached doesn't resolve to any page in our system. 🤔</p>
+      <p class="u-center"><a href="/" class="c-button">Go home.</a></p>
+    </div>
+  </section>
+{% endblock %}
