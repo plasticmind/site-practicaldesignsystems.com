@@ -1,0 +1,35 @@
+---
+permalink: /thank-you/
+title: "Thank You!"
+description: "Your message went through successfully!"
+crawl: "false"
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="c-section">
+    <div class="l-container--lg">
+      <h1 class="c-section__title">Message Recieved <span class="u-wiggle-hover">🎉</span></h1>
+      <hr class="c-hr">
+      <div class="l-grid l-grid--2-col">
+        <div class="l-grid__item--xl">
+         <p class="c-tagline__subtitle">Your email went through successfully. Thanks for taking the time to reach out. You can expect a response back from me within the next day or so.</p>
+         <p><b>I am human, though!</b></p>
+         <p>If for some reason I haven't replied after a few business days, feel free to send me a reminder message.</p>
+        </div>
+        <div class="l-grid__item--xs">
+          <div class="c-contact">
+            <h4 class="c-contact__title">Contact</h4>
+            <div class="c-contact__item">
+              <a href="tel:+1-267-328-8877">+1-267-328-8877</a>
+            </div>
+
+            <h4 class="c-contact__title">Address</h4>            
+            <div class="c-contact__item"><address>Melrose, NY 12121</address></div>
+
+          </div>
+        </div>
+    </div>
+  </section>
+{% endblock %}

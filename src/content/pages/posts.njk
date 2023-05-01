@@ -1,0 +1,41 @@
+---
+permalink: /daily/
+title: "Design Systems Daily"
+description: "Daily practical advice about encouraging better collaboration between design and engineering teams."
+eleventyNavigation:
+  key: Tips
+  title: Blog
+  order: 3
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="c-section u-pad-b-0">
+    <div class="l-container--lg">
+      <h1 class="c-section__title">Design Systems Daily</h1>
+      <p class="c-tagline__subtitle">Every day, I write an email with strategic insights and practical advice for improving collaboration and communication between design and engineering teams.</p> 
+    </div>
+  </section>
+  <section class="c-section">
+    <div class="l-container--lg">
+      <ul class="c-post-list">
+      {% for post in collections.posts %}
+        <li class="c-post-list__item">
+          <div class="l-grid l-grid--2-col">
+            <div class="l-grid__item--xl">
+              <a href="{{ post.url }}" class="c-post-list__link">
+                {{ post.data.title }}
+              </a>
+            </div>
+            <div class="l-grid__item--xs u-right">
+              <time class="c-kicker">{{ post.date | dateFull }}</time>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% include "partials/section-newsletter.njk" %}
+{% endblock %}

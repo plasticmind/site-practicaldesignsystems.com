@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% if section != 'home' %}{% if title %}{{ title | safe }} \\ {% endif %}{% endif %}{{ site.title }}</title>
+
+    {% if crawl == 'false' %}
+    <meta name=”robots” content=”noindex”>
+    {% endif %}
+
+    {% include "partials/head-meta.njk" %}
+    
+    {% block styles %}{% endblock %}
+
+  </head>
+  <body class="{% if section  %}single-page page-{{ page.fileSlug }}{% else %}home{% endif %}">
+
+      {% if section == 'home' %}
+        {% include "partials/site-header-large.njk" %}
+      {% else %}
+        {% include "partials/site-header.njk" %}
+      {% endif %}
+
+      <main class="c-site-content" role="main">
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+      </main>
+
+      {% include "partials/site-footer.njk" %}
+
+  </body>
+  {% include "partials/js-site-global.njk" %}
+  {% include "partials/js-fathom-analytics.njk" %}
+  {% block scripts %}{% endblock %}
+</html>
