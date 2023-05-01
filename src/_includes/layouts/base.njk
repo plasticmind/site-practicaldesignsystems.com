@@ -3,6 +3,10 @@
   <head>
     <title>{% if section != 'home' %}{% if title %}{{ title | safe }} \\ {% endif %}{% endif %}{{ site.title }}</title>
 
+    {% if crawl == 'false' %}
+    <meta name=”robots” content=”noindex”>
+    {% endif %}
+
     {% include "partials/head-meta.njk" %}
     
     {% block styles %}{% endblock %}
