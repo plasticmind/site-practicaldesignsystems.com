@@ -1,0 +1,33 @@
+---
+permalink: /confirmation/
+pageTitle: "Confirmed!"
+pageDescription: "You're in! Look for an email from me shortly..."
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="c-section">
+    <div class="l-container--lg">
+      <h1 class="c-section__title">You're in! <span class="u-wiggle-hover">🎉</span></h1>
+      <hr class="c-hr">
+      <div class="l-grid l-grid--2-col">
+        <div class="l-grid__item--xl">
+         <p class="c-tagline__subtitle">You successfully subscribed to <b>Design Systems Daily</b>. I'm really glad you're here! A welcome email is headed your way.</p>
+         <p>Expect a short, practical note from me in your inbox each day. If you ever read something I send and have a question, comment, or correction... hit reply and let me know.</p>
+         <p>Can't wait for the next email?</p>
+         <p><a href="/daily/" title="Design System Daily Archives" class="c-button">Browse the archives →</a></p>
+        </div>
+        <div class="l-grid__item--xs">
+          <div class="c-contact">
+            <h4 class="c-contact__title">Elsewhere</h4>
+            <div class="c-contact__item">
+              <p><a href="https://linkedin.com/in/plasticmind">LinkedIn</a></p>
+              <p><a href="https://twitter.com/plasticmind">Twitter</a></p>
+              <p><a href="https://adplist.org/mentors/jesse-gardner">ADPList</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+{% endblock %}
