@@ -1,7 +1,9 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 
 // plugins
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
+const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
+
 
 // filters
 const limit = require("./src/_11ty/filters/limit.js");
@@ -30,7 +32,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addCollection("posts", posts);
 
     // plugins
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    eleventyConfig.addPlugin(eleventyPluginNavigation);
+    eleventyConfig.addPlugin(eleventyPluginRss);
 
     // passthrough copy
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
