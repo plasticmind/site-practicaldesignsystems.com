@@ -34,7 +34,9 @@ module.exports = (eleventyConfig) => {
     // plugins
     eleventyConfig.addPlugin(eleventyPluginNavigation);
     eleventyConfig.addPlugin(eleventyPluginRss);
-    eleventyConfig.addPlugin(timeToRead);
+    eleventyConfig.addPlugin(timeToRead, {
+        style: 'short'
+    });
 
     // passthrough copy
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
