@@ -8,6 +8,7 @@
     </time>
     
     <h1 class="c-heading c-heading--lg">{{ title }}</h1>
+    <p><em>Read time: about {{ content | timeToRead ('265 words a minute') }}</em></p>
     {{ content | safe }}
     <p>—<br>
       Cheers,<br>
