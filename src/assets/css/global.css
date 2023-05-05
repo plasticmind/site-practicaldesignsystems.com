@@ -149,6 +149,7 @@ h1 {
 
 h2 {
     font-size: var(--font-xxl);
+    padding: 0 0 var(--spacing-lg);
 }
 
 h4 {
@@ -737,6 +738,39 @@ hr,
 .c-post-list__item {
     margin-bottom: var(--spacing-lg);
     padding-top: var(--spacing-lg);
+}
+
+
+/* == Screenshot styling, with slight dropshadow */
+
+.c-screenshot {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.c-screenshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px 0 var(--gray-80);
+    /* Create a subtle rotated page effect */
+    transform: rotate(2deg);
+    margin: 0 auto;
+}
+
+.c-screenshot img:hover {
+    box-shadow: 0 5px 15px 0 var(--gray-80);
+    transform: rotate(0deg);
+    transition: all var(--transition-sm) cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: wiggle var(--transition-sm) 1;
+}
+
+.c-screenshot--right {
+    float: right;
+    max-width: 33%;
+    padding-top: var(--spacing-lg);
+    margin: 0 0 var(--spacing-xxl) var(--spacing-xxl);
 }
 
 

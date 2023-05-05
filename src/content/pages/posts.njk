@@ -2,6 +2,7 @@
 permalink: /daily/
 title: "Design Systems Daily"
 description: "Daily practical advice about encouraging better collaboration between design and engineering teams."
+section: "daily"
 eleventyNavigation:
   key: Tips
   title: Blog
@@ -11,6 +12,8 @@ eleventyNavigation:
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+
+  {% if collections.posts.length %}
   <section class="c-section u-pad-b-0">
     <div class="l-container--lg">
       <h1 class="c-section__title">Design Systems Daily</h1>
@@ -20,22 +23,46 @@ eleventyNavigation:
   <section class="c-section">
     <div class="l-container--lg">
       <ul class="c-post-list">
-      {% for post in collections.posts %}
-        <li class="c-post-list__item">
-          <div class="l-grid l-grid--2-col">
-            <div class="l-grid__item--xl">
-              <a href="{{ post.url }}" class="c-post-list__link">
-                {{ post.data.title }}
-              </a>
+        {% for post in collections.posts %}
+          <li class="c-post-list__item">
+            <div class="l-grid l-grid--2-col">
+              <div class="l-grid__item--xl">
+                <a href="{{ post.url }}" class="c-post-list__link">
+                  {{ post.data.title }}
+                </a>
+              </div>
+              <div class="l-grid__item--xs u-right">
+                <time class="c-kicker">{{ post.date | dateFull }}</time>
+              </div>
             </div>
-            <div class="l-grid__item--xs u-right">
-              <time class="c-kicker">{{ post.date | dateFull }}</time>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </section>
+  {% else %}
+  <section class="c-section c-section--article">
+    <div class="l-container--lg">
+      <div class="c-screenshot c-screenshot--right">
+        <img src="/assets/img/pds-screenshot.png" alt="Screenshots of a sample email" class="c-screenshot__image">
+      </div>
+      <h1 class="c-section__title">Design Systems Daily</h1>
+      <p class="c-tagline__subtitle">Every day, I write an email with strategic insights and practical advice for improving collaboration and communication between design and engineering teams.</p> 
+      <p>To kick this list off, I'm going to use the first 30 emails to go through the key concepts of design systems and answer a lot of questions.</p>
+      <h2>If you have questions like...</h2>
+        <ul>
+          <li>What is (and isn’t) a design system?</li>
+          <li>What parts of a design system make sense for my organization?</li>
+          <li>Would our customer’s experience improve if we implemented a design system?</li>
+          <li>What’s the best way to get started with design systems?</li>
+          <li>How do we get support (aka budget) from leadership?</li>
+          <li>What common architectural patterns should we consider?</li>
+          <li>What pitfalls should we avoid?</li>
+        </ul>
+      <p>This is going to be a thorough introduction to design system fundamentals, delivered in daily, bite-sized chunks. It’s geared toward tech leadership at orgs with multiple teams or products as well as designers, developers, and product owners within those orgs; but there’s value here for anyone wanting to learn more about using how to build better digital products.</p>
+    </div>
+  </section>
+  {% endif %}
+
   {% include "partials/section-newsletter.njk" %}
 {% endblock %}

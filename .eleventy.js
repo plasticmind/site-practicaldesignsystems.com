@@ -13,6 +13,7 @@ const dateFullWeekday = require("./src/_11ty/filters/date.js").dateFullWeekday;
 const dateFeed = require("./src/_11ty/filters/date.js").dateFeed;
 const dateYear = require("./src/_11ty/filters/date.js").dateYear;
 const shuffle = require("./src/_11ty/filters/shuffle.js");
+const excludeDrafts = require("./src/_11ty/filters/excludeDrafts.js");
 
 // collections
 const posts = require("./src/_11ty/collections/posts.js");
@@ -27,6 +28,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("dateYear", dateYear);
     eleventyConfig.addFilter("limit", limit);
     eleventyConfig.addFilter("shuffle", shuffle);
+    eleventyConfig.addFilter("excludeDrafts", excludeDrafts);
 
     // collections
     eleventyConfig.addCollection("posts", posts);
