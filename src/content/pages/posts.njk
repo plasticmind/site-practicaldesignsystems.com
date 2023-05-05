@@ -2,6 +2,7 @@
 permalink: /daily/
 title: "Design Systems Daily"
 description: "Daily practical advice about encouraging better collaboration between design and engineering teams."
+section: "daily"
 eleventyNavigation:
   key: Tips
   title: Blog
@@ -11,6 +12,8 @@ eleventyNavigation:
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+
+  {% if collections.posts.length %}
   <section class="c-section u-pad-b-0">
     <div class="l-container--lg">
       <h1 class="c-section__title">Design Systems Daily</h1>
@@ -20,22 +23,27 @@ eleventyNavigation:
   <section class="c-section">
     <div class="l-container--lg">
       <ul class="c-post-list">
-      {% for post in collections.posts %}
-        <li class="c-post-list__item">
-          <div class="l-grid l-grid--2-col">
-            <div class="l-grid__item--xl">
-              <a href="{{ post.url }}" class="c-post-list__link">
-                {{ post.data.title }}
-              </a>
+        {% for post in collections.posts %}
+          <li class="c-post-list__item">
+            <div class="l-grid l-grid--2-col">
+              <div class="l-grid__item--xl">
+                <a href="{{ post.url }}" class="c-post-list__link">
+                  {{ post.data.title }}
+                </a>
+              </div>
+              <div class="l-grid__item--xs u-right">
+                <time class="c-kicker">{{ post.date | dateFull }}</time>
+              </div>
             </div>
-            <div class="l-grid__item--xs u-right">
-              <time class="c-kicker">{{ post.date | dateFull }}</time>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </section>
   {% include "partials/section-newsletter.njk" %}
+  {% else %}
+    {%- include "partials/section-no-posts.njk" -%}
+  {% endif %}
+
+
 {% endblock %}

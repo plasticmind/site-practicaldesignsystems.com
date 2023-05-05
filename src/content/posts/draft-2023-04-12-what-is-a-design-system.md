@@ -4,6 +4,7 @@ description: A brief explanation of what a design system is and isn't.
 date: 2023-04-12
 tags:
   - 101
+draft: true
 ---
 This question deserves a much longer answer than this short email, but I'll attempt a concise answer. Let's begin by looking closely at the term.
 

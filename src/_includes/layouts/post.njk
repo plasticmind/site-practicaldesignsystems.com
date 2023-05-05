@@ -8,7 +8,16 @@
     </time>
     
     <h1 class="c-heading c-heading--lg">{{ title }}</h1>
-    <p><small style="font-style:italic;opacity:0.5">{{ content | timeToRead ('265 words a minute') }} read time</small></p>
+      <div class="c-article-meta">
+        <p>{{ content | timeToRead ('265 words a minute') }} read time</p>
+        {% if tags %}
+          <ul class="c-tag-list">
+            {% for tag in tags %}
+              <li class="c-tag">#{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
     {{ content | safe }}
     <p>—<br>
       Cheers,<br>
