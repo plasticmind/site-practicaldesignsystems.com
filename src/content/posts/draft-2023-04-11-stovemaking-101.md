@@ -4,6 +4,7 @@ description: A helpful metaphor for thinking about the role design systems play 
 date: 2023-04-11
 tags:
   - education
+  - product
 draft: true
 ---
 

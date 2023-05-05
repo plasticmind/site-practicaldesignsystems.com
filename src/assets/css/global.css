@@ -256,6 +256,52 @@ blockquote>p {
 }
 
 
+/* == Article Meta */
+
+.c-article-meta {
+    font-size: var(--font-sm);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--spacing-lg) 0 0 0;
+    padding: 0 0 var(--spacing-xl);
+}
+
+.c-article-meta>* {
+    color: var(--gray-50);
+    margin: 0 var(--spacing-lg) 0 0;
+}
+
+.c-article-meta>*::after {
+    content: "•";
+    margin: 0 0 0 var(--spacing-lg);
+}
+
+.c-article-meta>*:last-child {
+    margin: 0;
+}
+
+.c-article-meta>*:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+
+/* == Tags */
+
+.c-tag-list,
+ul.c-tag-list {
+    margin: 0;
+    padding: 0;
+}
+
+.c-tag {
+    display: inline;
+    margin: 0 0 0 var(--spacing-sm);
+    padding: 0;
+}
+
+
 /* Components */
 
 
@@ -737,6 +783,8 @@ hr,
 .c-post-list {
     font-size: var(--font-lg);
     border-top: 1px solid var(--gray-90);
+    margin: 0;
+    padding: 0;
 }
 
 .c-post-list__item {

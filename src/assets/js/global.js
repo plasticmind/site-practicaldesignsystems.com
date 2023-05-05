@@ -12,8 +12,8 @@ const observer = new MutationObserver(function(mutations) {
     });
 });
 
-if (document.querySelector('.js-subscribe-form')) {
-    observer.observe(document.querySelector('.js-subscribe-form'), {
+if (document.querySelector('.formkit-form')) {
+    observer.observe(document.querySelector('.formkit-form'), {
         childList: true,
         subtree: true
     });
