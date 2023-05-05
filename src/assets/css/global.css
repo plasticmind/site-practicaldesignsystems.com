@@ -82,11 +82,16 @@
 /* Simple Reset */
 
 html,
-body,
-ul,
-li {
+body {
     margin: 0;
     padding: 0;
+}
+
+,
+ul,
+li {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 ul,
@@ -149,7 +154,6 @@ h1 {
 
 h2 {
     font-size: var(--font-xxl);
-    padding: 0 0 var(--spacing-lg);
 }
 
 h4 {
@@ -218,7 +222,7 @@ h4 {
 
 .c-section--article ol,
 .c-section--article ul {
-    padding: 0 0 0 var(--spacing-md);
+    padding: 0 0 0 var(--spacing-lg);
 }
 
 .c-section--article ul li {
@@ -753,22 +757,22 @@ hr,
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: 0 5px 15px 0 var(--gray-80);
+    box-shadow: 0 2px 5px 0 var(--gray-80);
     /* Create a subtle rotated page effect */
     transform: rotate(2deg);
     margin: 0 auto;
+    transition: all var(--transition-sm) var(--transition-easing);
 }
 
 .c-screenshot img:hover {
-    box-shadow: 0 5px 15px 0 var(--gray-80);
-    transform: rotate(0deg);
-    transition: all var(--transition-sm) cubic-bezier(0.34, 1.56, 0.64, 1);
-    animation: wiggle var(--transition-sm) 1;
+    box-shadow: 0 10px 15px 0 var(--gray-80);
+    transform: rotate(0deg) scale(1.05);
+    cursor: all-scroll;
 }
 
 .c-screenshot--right {
     float: right;
-    max-width: 33%;
+    max-width: 35%;
     padding-top: var(--spacing-lg);
     margin: 0 0 var(--spacing-xxl) var(--spacing-xxl);
 }
@@ -805,7 +809,7 @@ hr,
 }
 
 .u-pad-l-0 {
-    padding-top: var(--spacing-sm);
+    padding-left: 0;
 }
 
 .u-margin-t-0 {
@@ -945,5 +949,11 @@ hr,
     .c-social-links ul {
         margin-left: var(--spacing-md);
         grid-gap: var(--spacing-lg);
+    }
+    .c-screenshot--right {
+        float: none;
+        max-width: 100%;
+        margin: 0 auto var(--spacing-xl) auto;
+        padding: 0 var(--spacing-xl);
     }
 }

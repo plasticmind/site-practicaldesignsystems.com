@@ -40,29 +40,10 @@ eleventyNavigation:
       </ul>
     </div>
   </section>
+  {% include "partials/section-newsletter.njk" %}
   {% else %}
-  <section class="c-section c-section--article">
-    <div class="l-container--lg">
-      <div class="c-screenshot c-screenshot--right">
-        <img src="/assets/img/pds-screenshot.png" alt="Screenshots of a sample email" class="c-screenshot__image">
-      </div>
-      <h1 class="c-section__title">Design Systems Daily</h1>
-      <p class="c-tagline__subtitle">Every day, I write an email with strategic insights and practical advice for improving collaboration and communication between design and engineering teams.</p> 
-      <p>To kick this list off, I'm going to use the first 30 emails to go through the key concepts of design systems and answer a lot of questions.</p>
-      <h2>If you have questions like...</h2>
-        <ul>
-          <li>What is (and isn’t) a design system?</li>
-          <li>What parts of a design system make sense for my organization?</li>
-          <li>Would our customer’s experience improve if we implemented a design system?</li>
-          <li>What’s the best way to get started with design systems?</li>
-          <li>How do we get support (aka budget) from leadership?</li>
-          <li>What common architectural patterns should we consider?</li>
-          <li>What pitfalls should we avoid?</li>
-        </ul>
-      <p>This is going to be a thorough introduction to design system fundamentals, delivered in daily, bite-sized chunks. It’s geared toward tech leadership at orgs with multiple teams or products as well as designers, developers, and product owners within those orgs; but there’s value here for anyone wanting to learn more about using how to build better digital products.</p>
-    </div>
-  </section>
+    {%- include "partials/section-no-posts.njk" -%}
   {% endif %}
 
-  {% include "partials/section-newsletter.njk" %}
+
 {% endblock %}
