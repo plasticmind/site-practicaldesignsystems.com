@@ -1001,7 +1001,7 @@ hr,
     .c-screenshot--right {
         float: none;
         max-width: 100%;
-        margin: 0 auto var(--spacing-xl) auto;
-        padding: 0 var(--spacing-xl);
+        margin: var(--spacing-xl) auto;
+        padding: 0 var(--spacing-xxl);
     }
 }
