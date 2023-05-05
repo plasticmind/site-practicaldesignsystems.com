@@ -3,7 +3,7 @@
 // plugins
 const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
 const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
-
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 // filters
 const limit = require("./src/_11ty/filters/limit.js");
@@ -34,6 +34,9 @@ module.exports = (eleventyConfig) => {
     // plugins
     eleventyConfig.addPlugin(eleventyPluginNavigation);
     eleventyConfig.addPlugin(eleventyPluginRss);
+    eleventyConfig.addPlugin(timeToRead, {
+        style: 'short'
+    });
 
     // passthrough copy
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });

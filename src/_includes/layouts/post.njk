@@ -8,11 +8,13 @@
     </time>
     
     <h1 class="c-heading c-heading--lg">{{ title }}</h1>
+    <p><small style="font-style:italic;opacity:0.5">{{ content | timeToRead ('265 words a minute') }} read time</small></p>
     {{ content | safe }}
     <p>—<br>
       Cheers,<br>
       <img class="c-img" style="max-width:120px;height:auto;margin: -27px 0 0 -15px" src="/assets/img/signature.png" alt="Jesse Gardner">
     </p>
+    <p>Read more in <a href="/daily/" title="Read more from Design Systems Daily...">the archives...</a></p>
   </div>
 </section>
 {% endblock %}
