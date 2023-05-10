@@ -1,7 +1,7 @@
 ---
 title: To build a digital product...
 description: (The oversimplified version.)
-date: 2023-05-09
+date: 2023-05-10
 tags:
   - basics
   - product
