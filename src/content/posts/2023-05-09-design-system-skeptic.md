@@ -5,6 +5,7 @@ date: 2023-05-09
 tags:
   - practical
   - product
+  - 30-days
 ---
 
 > **prac·ti·cal** _adjective_ 1. of or concerned with the actual doing or use of something rather than with theory and ideas.
