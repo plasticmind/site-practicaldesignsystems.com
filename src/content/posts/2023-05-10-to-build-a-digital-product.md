@@ -5,6 +5,7 @@ date: 2023-05-10
 tags:
   - basics
   - product
+  - 30-days
 ---
 
 I left you hanging yesterday with the question: **what is a design system?**
