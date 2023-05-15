@@ -1,6 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+{% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 <section class="c-section c-section--article">
   <div class="l-container--lg">
     <time datetime="{{ page.date | dateISO }}" class="c-kicker">
@@ -23,7 +24,10 @@
       Cheers,<br>
       <img class="c-img" style="max-width:120px;height:auto;margin: -27px 0 0 -15px" src="/assets/img/signature.png" alt="Jesse Gardner">
     </p>
-    <p>Read more in <a href="/daily/" title="Read more from Design Systems Daily...">the archives...</a></p>
+
+    <p>{% if previousPost %}Up Next: <a href="{{ previousPost.url }}" title="Read: {{ previousPost.data.title | safe }}"><b>{{ previousPost.data.title }}</b></a>{% endif %}</p>
+    <p><small><a href="{{ site.url }}/daily/" title="Read more from Design Systems Daily...">← Full Archives</a></small></p>
+
   </div>
 </section>
 {% endblock %}

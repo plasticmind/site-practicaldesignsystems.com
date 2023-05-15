@@ -24,7 +24,7 @@ eleventyNavigation:
   <section class="c-section">
     <div class="l-container--lg">
       <ul class="c-post-list">
-        {% for post in collections.posts %}
+        {% for post in collections.posts | reverse %}
           <li class="c-post-list__item">
             <div class="l-grid l-grid--2-col">
               <div class="l-grid__item--xl">

@@ -1,13 +1,12 @@
 ---
-title: A Design System Skeptic?
-description: Why would a design system skeptic write 
+title: A design system skeptic?
+description: Why would a design system skeptic write about building design systems?
 date: 2023-05-09
 tags:
   - practical
   - product
   - 30-days
 ---
-
 > **prac·ti·cal** _adjective_ 1. of or concerned with the actual doing or use of something rather than with theory and ideas.
 
 I’m sure I raised a few eyebrows when I said that I have a healthy skepticism of design systems. I spent years working with orgs that had large teams and multiple digital products who could have genuinely benefitted from design systems… but it never quite worked. Why not? What went wrong?

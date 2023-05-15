@@ -1,5 +1,5 @@
 ---
-title: Casting Your Villain
+title: Cast your villain
 description: What problem are you trying to solve?
 date: 2023-05-13
 tags:
