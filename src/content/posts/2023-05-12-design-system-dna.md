@@ -1,5 +1,5 @@
 ---
-title: The DNA of a Design System
+title: The DNA of a design system
 description: What's in a design system?
 date: 2023-05-12
 tags:
