@@ -25,7 +25,3 @@ So... who is your key villain? Focus on just one, if you can. A well-defined vil
 If your villain is inefficiency, you might start by moving your most commonly used components into a library and keep them light on prescribed styling. If your villain is inconsistency, you might start with a code library of brand color values that can be easily integrated into products until you’re ready to roll out a full component library. If your villain is insecurity, you may want to start with a well-made reference site that also educates.
 
 What do you value the most? Starting by thinking about value helps you build the right tool for the job.
-
-—
-Cheers,
-Jesse
