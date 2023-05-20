@@ -3,10 +3,10 @@ title: Staring at finches…
 description: What does Darwin have to do with building a design system?
 date: 2023-05-16
 tags:
+  - 30-days
   - research
   - inventory
   - design-systems
-  - 30-days
 ---
 
 In the 1830s, Charles Darwin spent five weeks on the Galápagos Islands. While he explored, he discovered a diverse collection of unusual birds that he had never seen before. He wasn’t a trained ornithologist — he was a fossil collector and geologist — so he initially misidentified the birds. But he was a curious observer and a meticulous collector, and when he returned to London, he brought his findings to John Gould, a famous ornithologist. 

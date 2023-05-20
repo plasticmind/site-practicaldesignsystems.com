@@ -3,9 +3,9 @@ title: Your design system is a product
 description: Too much abstraction or design systems work too early can be risky.
 date: 2023-05-15
 tags:
-  - product-design
-  - getting-started
   - 30-days
+  - product
+  - basics
 ---
 
 If you were creating a new product, what would you do?
