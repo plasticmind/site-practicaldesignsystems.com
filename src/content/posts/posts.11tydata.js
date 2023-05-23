@@ -11,6 +11,8 @@ module.exports = () => {
         layout: 'layouts/post.njk',
         permalink: '/daily/{{ title | slugify }}/',
         ogtype: 'article',
+        "changefreq": "monthly",
+        "priority": "0.8",
         eleventyComputed: {
             eleventyExcludeFromCollections: data => showDraft(data) ? data.eleventyExcludeFromCollections : true,
             permalink: data => showDraft(data) ? data.permalink : false,
