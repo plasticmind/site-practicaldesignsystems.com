@@ -45,6 +45,7 @@ module.exports = (eleventyConfig) => {
     // passthrough copy
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
     eleventyConfig.addPassthroughCopy("./src/assets/img/");
+    eleventyConfig.addPassthroughCopy("./src/assets/i/"); // Post-related images
     eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
     eleventyConfig.addPassthroughCopy("./src/assets/css/");
     eleventyConfig.addPassthroughCopy("./src/assets/js/");

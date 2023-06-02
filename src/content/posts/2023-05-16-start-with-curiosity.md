@@ -1,5 +1,5 @@
 ---
-title: Staring at finches…
+title: Start with curiosity…
 description: What does Darwin have to do with building a design system?
 date: 2023-05-16
 tags:

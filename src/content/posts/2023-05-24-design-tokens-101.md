@@ -1,9 +1,9 @@
 ---
 title: Design tokens 101
-description: Buckle up, this is a big topic.
+description: What does randomness have to do with creativity?
 date: 2023-05-24
 tags:
-  - components
+  - design-tokens
   - abstraction
   - design-systems
   - 30-days
