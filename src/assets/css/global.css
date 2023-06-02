@@ -27,6 +27,7 @@
     --purple-50: hsl(300, 100%, 50%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
+    --gray-95: hsl(200, 5%, 95%);
     --gray-90: hsl(200, 5%, 90%);
     --gray-80: hsl(200, 5%, 80%);
     --gray-70: hsl(200, 5%, 70%);
@@ -113,6 +114,15 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+code,
+pre {
+    font-family: var(--font-family-mono);
+    color: var(--red-40);
+    background: var(--gray-95);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-sm);
 }
 
 
@@ -235,13 +245,12 @@ h4 {
     margin-bottom: var(--spacing-lg);
 }
 
-.c-section--article li::marker,
 .c-section--article li::marker {
-    color: var(--cyan-50);
+    color: var(--blue-50);
 }
 
 blockquote {
-    border-left: 4px solid var(--cyan-50);
+    border-left: 4px solid var(--blue-50);
     padding: 0 0 0 calc(var(--spacing-lg) * 1.25);
     margin: var(--spacing-lg) 0 0 0;
     font-style: italic;

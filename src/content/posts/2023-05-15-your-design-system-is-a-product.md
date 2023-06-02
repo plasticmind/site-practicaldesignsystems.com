@@ -13,7 +13,7 @@ If you were creating a new product, what would you do?
 You would probably:
 
 - Identify and interview your target users to make sure you understand their needs;
-- Research other comparable products in the space to learn what needs they’ve identified and how they’re addressing - them;
+- Research other comparable products in the space to learn what needs they’ve identified and how they’re addressing them;
 - Build a product that brings value to them by addressing those needs;
 - Narrow the scope of what you’re building by focusing on a key value proposition;
 - Market the product to your target users by demonstrating this clear value proposition;

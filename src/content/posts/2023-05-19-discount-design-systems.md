@@ -45,8 +45,4 @@ I know of several organizations that worked on huge design system efforts for mo
 
 There may be some rare scenarios where it makes sense to build large at first, but if you're just getting started, consider starting with a discount design systems mindset.
 
-—
-Cheers,
-Jesse
-
 *P.S. This approach may not work as well in orgs where some part of a design system already exists. More on that tomorrow.*
