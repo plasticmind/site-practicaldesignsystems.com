@@ -1,7 +1,7 @@
 ---
 title: Measuring success…
 description: More collaboration = a design system that lasts longer and is resilient to organizational change.
-date: 2023-06-02
+date: 2023-06-03
 tags:
   - analytics
   - value
