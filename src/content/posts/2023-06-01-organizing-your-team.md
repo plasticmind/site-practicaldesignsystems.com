@@ -4,7 +4,6 @@ description: How does your team operate and interface with the rest of your comp
 date: 2023-06-01
 tags:
   - contribution
-  - governance
   - communication
   - collaboration
   - design-systems
