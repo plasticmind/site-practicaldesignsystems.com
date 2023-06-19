@@ -1,6 +1,6 @@
 ---
-title: Don't build a bottleneck...
-description: When you create tools that everyone in your organization uses, you're at risk of building a bottleneck.
+title: Building bottlenecks...
+description: When you create tools that everyone in your organization uses, you're at risk of creating a bottleneck.
 date: 2023-06-19
 tags:
   - governance
