@@ -20,13 +20,14 @@ eleventyNavigation:
     <div class="l-container--lg">
       <h1 class="c-section__title">Design Systems Daily</h1>
       {# <p class="c-tagline__subtitle">Every day, I write an email with strategic insights and practical advice for improving collaboration and communication between design and engineering teams.</p>  #}
-      <p class="c-tagline__subtitle">Each day for 30 days, I'm writing daily bite-sized chunks of insight about design systems. Here's a list of the archives so far:</p>
+      <p class="c-tagline__subtitle">Each day, I write daily bite-sized chunks of insight about building digital products at scale. Topics covered include user research, design systems, and team collaboration... <em>with infrequent silliness and irreverence thrown in for good measure.</em></p>
+      <h3>Here's what I've written so far:</h3>
     </div>
   </section>
   <section class="c-section">
     <div class="l-container--lg">
       <ul class="c-post-list">
-        {% for post in collections.posts | reverse %}
+        {% for post in collections.posts %}
           <li class="c-post-list__item">
             <div class="l-grid l-grid--2-col">
               <div class="l-grid__item--xl">
