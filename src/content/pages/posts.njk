@@ -21,11 +21,14 @@ eleventyNavigation:
       <h1 class="c-section__title">Design Systems Daily</h1>
       {# <p class="c-tagline__subtitle">Every day, I write an email with strategic insights and practical advice for improving collaboration and communication between design and engineering teams.</p>  #}
       <p class="c-tagline__subtitle">Each day, I write daily bite-sized chunks of insight about building digital products at scale. Topics covered include user research, design systems, and team collaboration... <em>with infrequent silliness and irreverence thrown in for good measure.</em></p>
-      <h3>Here's what I've written so far:</h3>
+
     </div>
   </section>
+
+    {% include "partials/section-newsletter.njk" %}
   <section class="c-section">
     <div class="l-container--lg">
+            <h3>Here's what I've written so far:</h3>
       <ul class="c-post-list">
         {% for post in collections.posts %}
           <li class="c-post-list__item">
@@ -44,7 +47,7 @@ eleventyNavigation:
       </ul>
     </div>
   </section>
-  {% include "partials/section-newsletter.njk" %}
+    {% include "partials/section-newsletter.njk" %}
   {% else %}
     {%- include "partials/section-no-posts.njk" -%}
   {% endif %}
