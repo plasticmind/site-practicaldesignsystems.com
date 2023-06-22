@@ -35,7 +35,7 @@ If you’re a mature team with a suite of tools and resources, user research mig
 
 - Conduct usability studies to evaluate the usability of existing components and recommend improvements;
 - Work with designers and engineers to create case studies for tools and resources that can instruct other teams who could use them;
-- Use research insights to create [higher-order component usage patterns](http://localhost:8080/daily/better-than-a-truck-full-of-lego/), educating teams who build with components how to combine them in meaningful ways to create better user experiences;
+- Use research insights to create [higher-order component usage patterns](https://practicaldesignsystems.com/daily/better-than-a-truck-full-of-lego/), educating teams who build with components how to combine them in meaningful ways to create better user experiences;
 - Interview teams for continuous improvements of internal tools and processes;
 - Standardize user research methods and practices across the org;
 
