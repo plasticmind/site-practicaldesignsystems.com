@@ -1,0 +1,19 @@
+---
+title: 5 Reasons Design Systems Fail
+description: Do any of these resonate with you? What have you noticed about design systems work that fails?
+date: 2023-06-28
+tags:
+  - fail
+  - designsystems
+---
+When I brought up design systems with folks at Config 2023, I heard a surprising number of people casually share stories about design system failures. … “Our team built one, but no one uses it.” … “We have one leadership requires us to use, but I’d prefer third-party framework X.” … “We brought in a vendor to build one, but it stifles our creativity and is hard to change.”
+
+Here are 5 reasons why design systems fail:
+
+- **The design system solves imaginary problems instead of real ones.** Instead of solving genuine needs, DS teams can sometimes create more work by making an easy problem harder and more convoluted. If you can solve real, existing problem for your teams, you’ll increase adoption and build stronger partnerships between teams.
+- **The design system supersedes the end user product.** A too-heavy emphasis on the design system risks stealing focus away from the end product, the one that’s meant to deliver on the core value prop, the one customers actually use. That’s not to say a healthy consideration of both the design system and the product of that system can’t co-exist, but the incentive structure behind DS-as-product makes a Maslow’s Hammer scenario highly likely. This is especially important when it comes to measuring effectiveness.
+- **The design system tries to do or control too much.** It’s no secret that people often fear that a design system will hurt creativity by constraining the design and it will hurt efficiency by becoming a bottleneck. This usually happens when a design system tries to “micromanage”  every part of the design. Be only as opinionated as you need to be. Keep things small and let the creativity come from how designers mix and match the components. Give teams an “escape valve,” some way to create and own solutions in harmony with the broader design system.
+- **Design and engineering are not in alignment.** The way design decisions get into software varies from organization to organization, which makes true “end-to-end” design systems elusive.  Figma’s new features like dev mode and variables can help, but tools are only part of the equation. Your design team might build out a tremendous user experience in a design tool, but do you have the engineering expertise to pull it off? How does your blue sky prototype fit against an outdated codebases with only partial design integration? Creating a shared vision, establishing meaningful communication channels, imagining together what’s ideal, understanding together what’s possible… this all takes a lot of work to do well.
+- **The organization needs restructuring or realignment.** Sometimes an organization that desperately needs a design system has an internal structure that makes design systems work difficult. For example, teams responsible for shipping various applications across the organization may not have the reporting structure or communication channels conducive to building consensus around a common set of tools. For organizations like this, design systems work can feel impossible. In such cases, it can often be helpful to piggy-back a design systems initiative off an existing approved project and use the success of that small low-risk effort to make a compelling case to leadership for a restructuring or realignment more conducive to consensus building.
+
+Do any of these resonate with the work you’ve done? What have you noticed about design systems work that fails?
