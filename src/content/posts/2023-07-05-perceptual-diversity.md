@@ -19,6 +19,6 @@ The application interface is straightforward and easy to understand, and the acc
 
 Moral of the story? 
 
-Never underestimate the power of an existing user base.
+**Never underestimate the power of an existing user base.**
 
 [If you’re on Threads already, let’s connect!](https://www.threads.net/@plasticmind)
