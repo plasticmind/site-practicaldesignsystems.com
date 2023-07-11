@@ -13,13 +13,13 @@ If you had to guess what it means, what would you say?
 
 When Minecraft developers were coming up with a way to generate terrain for new worlds, they wanted enough randomness to be unique and interesting, but enough predictability so they could simulate features of real world geography. They chose Perlin noise, a special type of randomness that introduces smoothing for a more organic look and returns consistent results using the same seed.
 
-![Sample Noise: Simplex vs. Perlin](/assets/i/post-noise-types.png)
+![Sample Noise: Simplex vs. Perlin](https://practicaldesignsystems.com/assets/i/post-noise-types.png)
 
 Hang with me on this…
 
 Developers modified the noise output in different ways and created a library of noise maps with different characteristics. Then — and this is the important bit — they used names to convey the mental metaphor for each map: continentalness, erosion, peaks & valleys, temperature, humidity, etc.
 
-![Sample Noise Maps: Continentalness and Erosion](/assets/i/post-noise-continentalness.png)
+![Sample Noise Maps: Continentalness and Erosion](https://practicaldesignsystems.com/assets/i/post-noise-continentalness.png)
 
 One of the Minecraft developers who works on terrain generation explains in [a recent talk on the topic](https://www.youtube.com/watch?v=ob3VwY4JyzE):
 
@@ -30,4 +30,4 @@ I’ve talked about [useful naming conventions for design systems in a previous 
 
 And for the curious, *continentalness* defines the relationship between ocean terrain and inland terrain. In other words, it’s used to shape continents. It's amazing what you can get when you combine all of this randomness together in intentional and meaningful ways, isn't it?
 
-![Merging noise maps to create full biomes](/assets/i/post-noise-biomes.png)
+![Merging noise maps to create full biomes](https://practicaldesignsystems.com/assets/i/post-noise-biomes.png)
