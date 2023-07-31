@@ -1,6 +1,6 @@
 ---
 title: Death by 1000 meetings
-description: ...
+description: If you can't identify a goal for a meeting, cancel it.
 date: 2023-07-31
 tags:
   - meetings
