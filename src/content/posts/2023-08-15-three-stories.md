@@ -1,7 +1,7 @@
 ---
 title: Three stories
 description: A useful framework for thinking about technology.
-date: 2023-08-16
+date: 2023-08-15
 tags:
   - technology
   - choice
