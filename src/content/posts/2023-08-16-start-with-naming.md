@@ -1,7 +1,7 @@
 ---
 title: Start with naming
 description: Finding common ground in the art of naming
-date: 2023-08-15
+date: 2023-08-16
 tags:
   - team-dynamics
   - collaboration
