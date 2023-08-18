@@ -1,5 +1,5 @@
 ---
-title: Demonstrating expertise in design system
+title: Demonstrating expertise in design systems
 description: How do you showcase design systems work and expertise?
 date: 2023-08-17
 tags:
