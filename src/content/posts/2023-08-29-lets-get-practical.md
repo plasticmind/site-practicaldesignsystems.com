@@ -1,10 +1,13 @@
 ---
-title: ...
-description: ...
+title: Let's get practical...
+description: Shifting gets toward some more practical details about design system.
 date: 2023-08-29
 tags:
-  - ...
+  - practical
+  - announcements
 ---
+(Sorry... this email should have gone out yesterday morning, but there was a technical glitch.)
+
 I called an audible last week, and didn’t sent out any more daily emails after Monday. In addition to fighting off a cold (not fun on vacation), I needed some mental space to think about what’s next for this daily email list.
 
 I named this site Practical Design Systems because I’m the type of person who learns better by doing more than by theorizing.
