@@ -1,7 +1,7 @@
 ---
 title: Let's get practical...
 description: Shifting gets toward some more practical details about design system.
-date: 2023-08-29
+date: 2023-08-28
 tags:
   - practical
   - announcements
