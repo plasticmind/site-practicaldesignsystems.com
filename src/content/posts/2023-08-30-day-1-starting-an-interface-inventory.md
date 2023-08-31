@@ -1,12 +1,11 @@
 ---
 title: "Day 1: Starting an interface inventory"
 description: Collecting an inventory of our digital products.
-date: 2023-08-31T05:11:38.032Z
+date: 2023-08-30
 tags:
   - interface-inventory
   - getting-started
   - design-systems
-draft: true
 ---
 Today, I’m kicking off a practical design system build, soup to nuts.
 
@@ -24,7 +23,7 @@ If I were an employee, it would be easy to get a list of unique digital products
 
 I’ll pull those subdomains up in my browser, take [a full page screenshot](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl), and paste them into the page I created to hold a screenshot of each digital product:
 
-![A digital product inventory in Figma](/assets/i/post-figma-product-inventory.png)
+![A digital product inventory in Figma](https://practicaldesignsystems.com/assets/i/post-figma-product-inventory.png)
 
 I love this 10,000 foot view of the digital product offering. With all of the products side-by-side, you can already get a sense of the styles and patterns that are common.
 
