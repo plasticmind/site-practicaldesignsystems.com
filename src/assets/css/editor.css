@@ -1,0 +1,19 @@
+@import url("https://use.typekit.net/xhn3otp.css");
+.frame-content {
+    padding: 2rem 1rem;
+}
+.frame-content h1 {
+    letter-spacing: 0;
+}
+.frame-content li {
+    list-style: square;
+}
+.frame-content > div > div:nth-child(2) {
+    font-style: italic;
+    color: #999;
+}
+.frame-content > div > div:nth-child(3) {
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: solid 1px #999;
+    padding: 1rem 0;
+}
