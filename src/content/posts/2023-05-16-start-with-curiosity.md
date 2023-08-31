@@ -8,7 +8,6 @@ tags:
   - inventory
   - design-systems
 ---
-
 In the 1830s, Charles Darwin spent five weeks on the Galápagos Islands. While he explored, he discovered a diverse collection of unusual birds that he had never seen before. He wasn’t a trained ornithologist — he was a fossil collector and geologist — so he initially misidentified the birds. But he was a curious observer and a meticulous collector, and when he returned to London, he brought his findings to John Gould, a famous ornithologist. 
 
 After examining Darwin’s findings, Gould came to a startling conclusion: these birds were a brand new species of finch, with unique beaks much different than the birds on the mainland. Their isolation on separate islands with wildly different environments over long periods of time caused them to adapt into entirely new species. This insight led Darwin to the ground-breaking idea of natural selection, the cornerstone of evolution. A combination of persistent curiosity, rigorous observation, and expert analysis led to one of the most important scientific discoveries of all time.
@@ -29,7 +28,7 @@ I like the name Ben Callahan uses for this role: “Design Systems Archeologist.
 
 Like Darwin, you may not immediately identify patterns, and you may even get patterns wrong. But you’re looking for commonalities and divergences. The picture will become clearer the more you observe and document, and even more so when you review your findings with experts in your company.
 
-Brad’s original article included a Keynote template that’s useful for organizing your screenshots. I created a slightly modified version for Google Sheets. 
+Brad’s original article included a Keynote template that’s useful for organizing your screenshots. I created a slightly modified version for Google Slides. 
 
 Feel free to make a copy for your own use:
 
@@ -39,9 +38,9 @@ Feel free to make a copy for your own use:
 
 In case the benefits of this exercise aren’t obvious, here are a few:
 
-- You will end up with a clear sense of what components are most important for your company’s digital products — which can help you decide what should be included in an MVP;
-- You will have a much clearer picture of the visual inconsistencies across digital products — which can make a very compelling value proposition to stakeholders;
-- You will have reviewed every part of your digital ecosystem — which can provide additional insights about the overall user experience, like missing options, dead ends, moving between products, how components come together, etc.
+* You will end up with a clear sense of what components are most important for your company’s digital products — which can help you decide what should be included in an MVP;
+* You will have a much clearer picture of the visual inconsistencies across digital products — which can make a very compelling value proposition to stakeholders;
+* You will have reviewed every part of your digital ecosystem — which can provide additional insights about the overall user experience, like missing options, dead ends, moving between products, how components come together, etc.
 
 As you highlight these system patterns and share them more with the broader team, a common language and a shared understanding of your organizations digital ecosystem comes into focus… that’s when the deeper insights begin to form and where consensus can take root.
 
