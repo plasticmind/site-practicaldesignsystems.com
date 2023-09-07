@@ -1,11 +1,11 @@
 ---
 title: Just another commodity…
 description: The challenge facing modern design systems work...
+date: 2023-09-06T04:30:39.917Z
 tags:
   - quote
   - designsystems
   - software
-date: 2023-09-06T04:30:39.917Z
 draft: false
 ---
 Taking a much needed break from the DS work today. 
