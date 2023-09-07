@@ -5,6 +5,7 @@ tags:
   - quote
   - designsystems
   - software
+  date: 2023-09-06T04:30:39.917Z
 draft: false
 ---
 Taking a much needed break from the DS work today. 
