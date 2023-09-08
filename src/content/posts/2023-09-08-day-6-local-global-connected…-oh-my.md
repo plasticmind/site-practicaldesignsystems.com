@@ -13,7 +13,7 @@ In [a previous post](https://practicaldesignsystems.com/daily/let-s-talk-about-c
 ![Master component vs. component instance](/assets/i/post-bofa-master-component.png)
 
 * It is a layer (or group of layers) that gets special treatment in Figma, like a purple ❖ diamond next to its name in the Layers panel or showing up in the Assets panel;
-* It be re-used as *instances* across multiple screens, and a change on master component will update all of the instances;
+* It can be re-used as *instances* across multiple screens, and a change on master component will update all of the instances;
 * It can contain *props,* which are the changeable parts of a component, defined as values that can be connected to specific design properties;
 * It can have multiple *variants*, or different variations, of the same component with various style combinations, and they can also contain their own unique props.
 * It can be published to a library for use in other projects;
@@ -29,7 +29,7 @@ When I last left my humble utility nav, it was an auto-layout frame with a backg
 
 ![Utility Nav Component](/assets/i/post-bofa-utility-nav.png)
 
-To turn this into a component, I simply selected it and pressed cmd-opt-K, though I could have right-clicked and selected “Create Component.”
+To turn this into a component, I simply selected it and pressed CMD-OPT-K, though I could have right-clicked and selected “Create Component.”
 
 ![Selecting "Create Component" from the main menu](/assets/i/post-bofa-create-component.png)
 
@@ -37,11 +37,11 @@ It now has the purple diamond — that’s how you know it’s a component!
 
 ![Component layer has a diamond icon](/assets/i/post-bofa-component-layer.png)
 
-If I click on the “Assets” tab at the top of the right sidebar, I can now see my component.
+If I click on the “Assets” tab at the top of the left sidebar, I can now see my component.
 
 ![Selecting the assets layer](/assets/i/post-bofa-assets.png)
 
-Now I’m ready to place a couple of instances. I’m going to place them on my Digital Products page, right on top of the screenshot so I can see how it would look. 
+Now I’m ready to place a couple of instances. I’m going to place them on my Digital Products page, right on top of my screenshots so I can see how my new standardized approach will look in context. This is me trying on a new shirt and looking at it in the mirror to make sure it works.
 
 ![Dragging and dropping component instance on to screenshot](/assets/i/post-bofa-place-component-instance.gif)
 
@@ -53,7 +53,7 @@ Now, I want to publish my component so that other teams could easily reuse it in
 
 With the Assets sidebar still open, I clicked the book icon in the upper-righthand side of that panel and selected Publish:
 
-![Publishing our component](/assets/i/screenshot-2023-09-08-at-03.03.52-2x.png)
+![Publishing my component](/assets/i/screenshot-2023-09-08-at-03.03.52-2x.png)
 
 I just needed to write a commit message (this whole interaction is very GitHub like) to get the library published. 
 
