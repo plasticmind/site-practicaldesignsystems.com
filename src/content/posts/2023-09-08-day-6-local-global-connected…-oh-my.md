@@ -1,6 +1,7 @@
 ---
 title: "Day 6: Local, global, connected… oh my!"
 description: Creating a proper component
+date: 2023-09-07T04:30:39.917Z
 tags:
   - component
   - abstraction
