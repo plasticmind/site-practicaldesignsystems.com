@@ -1,7 +1,7 @@
 ---
 title: "Day 9: Conveying state with variants"
 description: Adding variants as a way to represent state in our utility nav component.
-date: 2023-09-10
+date: 2023-09-12
 tags:
   - figma
   - component
