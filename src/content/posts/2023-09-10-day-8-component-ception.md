@@ -6,7 +6,7 @@ tags:
   - component
   - autolayout
   - figma
-draft: true
+draft: false
 ---
 Today, I’m creating a new component from the text layers in my **Utility Nav** component. Yep! Components can contain other components. A new component for nav items will let me create multiple states for each item and will give me additional flexibility later on.
 
