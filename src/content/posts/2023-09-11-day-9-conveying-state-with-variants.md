@@ -6,15 +6,15 @@ tags:
   - figma
   - component
   - variants
-draft: true
+draft: false
 ---
-I did some component-ception yesterday: I created a Nav Item component and used it to fill up my Utility Nav. It felt like a roundabout way of accomplishing the same end result, but today I’ll show you some of the flexibility for representing state that setup work gives me.
+I did some component-ception yesterday: I created a **Nav Item** component and used it to fill up my **Utility Nav** component. It felt like a roundabout way of accomplishing the same end result, but today I’ll show you some of the flexibility for representing state that setup work gives me.
 
 The only state I noticed while doing [my initial content inventory](https://practicaldesignsystems.com/daily/day-5-what-to-expect-when-building-components/) was that active (current) page was underlined. I’ll start simply by recreating that with a variant.
 
 A 'variant' is an instance property. In other words, you can define a property of your component that points to additional versions or styles of that component. Variants makes it easier to organize and choose the specific version you need without poking around a lot of separate items. Think of a primary, secondary, and disabled button — essentially, they’re all the same component, with only slight style changes to convey their distinct state.
 
-To create the variant, I right-clicked the **\*\***Nav Item**\*\*** component and selected **Main Component → Add Variant.** When I did, several things happened:
+To create the variant, I right-clicked the **Nav Item** component and selected **Main Component → Add Variant.** When I did, several things happened:
 
 ![Figma Variants](/assets/i/post-bofa-variant.png)
 
@@ -30,7 +30,7 @@ Let’s review:
 * **⬦ → Component instance** — Copies or children of the master component that can be placed in designs and updated without affecting the master. Updates to the master component will get updated in all instances, unless a specific property has been overridden in the instance.
 * **⬥ → Component variant** — A special property of a master component that allows grouping different versions of a component within one master.
 
-This new layer is actually a new variant, created from a copy of the component. It assigned the original the name from the master, and it named the copy Variant2. If you select the master component and look in the right sidebar, you’ll notice a new property under Properties: Property 1. It has two values: Nav Item and Variant 2.
+This new layer is actually a new variant, created from a copy of the component. It assigned the original the name from the master, and it named the copy **Variant2**. If you select the master component and look in the right sidebar, you’ll notice a new property under Properties: **Property 1**. It has two values: **Nav Item** and **Variant 2**.
 
 ![Property1 = Nav Item, Variant2](/assets/i/post-bofa-prop.png)
 
