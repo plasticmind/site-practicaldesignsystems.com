@@ -16,9 +16,9 @@ The last few emails I’ve sent have been laser-focused on the component creatio
 * I created [a **Nav Item** component](https://practicaldesignsystems.com/daily/day-8-component-ception/) and used it to replace the individual list items in the **Utility Nav;**
 * I [added a variant](https://practicaldesignsystems.com/daily/day-9-conveying-state-with-variants/) to the **Nav Item** to represent the active state.
 
-I now have a new component in Figma.
+I have a new component in Figma.
 
-What's next?
+What now?
 
 At this point, I would review the work I’ve done with my team, especially if I were on a dedicated design systems team. I’ve extracted some common patterns into a unified standard, so I’d like to validate that quickly with the team. Any use cases I haven’t accounted for? Anything I’ve eliminated that should actually be a variant?
 
