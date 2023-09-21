@@ -10,15 +10,15 @@ draft: false
 ---
 The last few emails I’ve sent have been laser-focused on the component creation process in Figma. It’s worth stepping back a moment and recapping:
 
-* I started an interface inventory of Bank of America’s web-based digital products, documenting common patterns;
-* I came up with a standard design for those patterns in Figma to propose to the team based on the most common design choices;
-* I created a **Utility Nav** component and set it up with autolayout;
-* I created a **Nav Item** component and used it to replace the individual list items in the **Utility Nav;**
-* I added a variant to the **Nav Item** to represent the active state.
+* I started [an interface inventory](https://practicaldesignsystems.com/daily/day-1-starting-an-interface-inventory/) of Bank of America’s web-based digital products, documenting common patterns;
+* I came up with [a standard design](https://practicaldesignsystems.com/daily/day-3-extracting-patterns-with-a-commonality-spectrum/) for those patterns in Figma to propose to the team based on the most common design choices;
+* I created [a **Utility Nav** component](https://practicaldesignsystems.com/daily/day-4-building-a-component/) and set it up with autolayout;
+* I created [a **Nav Item** component](https://practicaldesignsystems.com/daily/day-8-component-ception/) and used it to replace the individual list items in the **Utility Nav;**
+* I [added a variant](https://practicaldesignsystems.com/daily/day-9-conveying-state-with-variants/) to the **Nav Item** to represent the active state.
 
 I now have a new component in Figma.
 
-Now what?
+What's next?
 
 At this point, I would review the work I’ve done with my team, especially if I were on a dedicated design systems team. I’ve extracted some common patterns into a unified standard, so I’d like to validate that quickly with the team. Any use cases I haven’t accounted for? Anything I’ve eliminated that should actually be a variant?
 
