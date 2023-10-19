@@ -9,7 +9,7 @@ tags:
   - css
 draft: false
 ---
-Yesterday, I built out the base HTML and some light styling for my Utility Nav component. I created a separate CSS file for my component, but it’s worth taking a minute to talk about a few different approaches you can take when creating styles for a component:
+Yesterday, I built out the base HTML and some light styling for my **Utility Nav** component. I created a separate CSS file for my component, but it’s worth taking a minute to talk about a few different approaches for creating styles for a component:
 
 **Inline Styles:** 
 
