@@ -25,10 +25,7 @@ Once I added the Babel support, I ran a `npm version patch` to bump the version 
 
 💡 **Here’s a neat tip.** I added the following lines to the component library’s `package.json`.  The `build` step does the transpiling and copies what it builds over to a distribution folder. The `prepublishOnly` step says “if someone tries to publish this to npm, make sure you run the build step first.”
 
-```jsx
-"build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files",
-"prepublishOnly": "npm run build",
-```
+!["build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files", "prepublishOnly": "npm run build",](/assets/i/post-bofa-22-3.png)
 
 So now I can simply make a change, bump the version number, and publish without a whole lot of mental overhead.
 
