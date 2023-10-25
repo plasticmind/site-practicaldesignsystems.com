@@ -1,7 +1,7 @@
 ---
 title: "Day 23: One component! In multiple products!"
 description: The true benefit a centralized component library approach.
-date: 2023-10-25
+date: 2023-10-24
 tags:
   - components
   - npm
