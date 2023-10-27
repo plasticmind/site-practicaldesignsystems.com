@@ -25,7 +25,7 @@ Do you see the gap? We’re missing connectivity between the two.
 
 ![two overlapping diamonds with the heading "Designers" and "Developers" — and the word "Design Systems" pointing to the overlap.](/assets/i/post-bofa-25-1.png)
 
-If Research Jesse provides some insights to Designer Jesse who decides that something needs to change, how does that change get into the actual software? Usually by Designer Jesse writing up tickets and handing it off to Developer Jesse.
+If Research Jesse provides some insights to Designer Jesse who decides that something needs to change, how does that change get into the actual software? Usually by Designer Jesse writing up tickets in his favorite project management tool and handing it off to Developer Jesse.
 
 Again… this is how many orgs function, and it isn’t bad. 
 
