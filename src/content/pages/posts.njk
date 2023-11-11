@@ -1,5 +1,8 @@
 ---
-permalink: /daily/
+permalink: "daily/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}"
+pagination:
+  data: collections.posts
+  size: 25
 title: "Design Systems Daily"
 description: "Daily practical advice about encouraging better collaboration between design and engineering teams."
 section: "daily"
@@ -26,17 +29,23 @@ eleventyNavigation:
   </section>
 
     {% include "partials/section-newsletter.njk" %}
+
   <section class="c-section">
     <div class="l-container--lg">
-            <h3>Here's what I've written so far:</h3>
+            <h3>👇 Here's what I've written so far:</h3>
       <ul class="c-post-list">
-        {% for post in collections.posts %}
+        {% for post in pagination.items %}
           <li class="c-post-list__item">
             <div class="l-grid l-grid--2-col">
               <div class="l-grid__item--xl">
-                <a href="{{ post.url }}" class="c-post-list__link">
-                  {{ post.data.title }}
-                </a>
+                <div class="c-post-list__title">
+                  <a href="{{ post.url }}" class="c-post-list__link">
+                    {{ post.data.title }}
+                  </a>
+                </div>
+                <div class="c-post-list__description">
+                  {{ post.data.description }}
+                </div>                
               </div>
               <div class="l-grid__item--xs">
                 <time class="c-kicker">{{ post.date | dateFull }}</time>
@@ -45,6 +54,27 @@ eleventyNavigation:
           </li>
         {% endfor %}
       </ul>
+
+{% if pagination.pageLinks.length > 1 %}
+<nav class="c-pagination l-grid l-grid--2-col">
+  {% if pagination.previousPageLink %}
+    <div class="l-grid__item c-pagination__item">
+      <a href="{{ pagination.previousPageHref | url }}">← Newer Articles</a>
+    </div>
+  {% else %}
+    <div class="l-grid__item c-pagination__item"></div>
+  {% endif %}
+
+  {% if pagination.nextPageLink %}
+    <div class="l-grid__item c-pagination__item">
+      <a href="{{ pagination.nextPageHref | url }}">Older Articles →</a>
+    </div>
+  {% else %}
+    <div class="l-grid__item c-pagination__item"></div>
+  {% endif %}
+</nav>
+{% endif %}
+
     </div>
   </section>
     {% include "partials/section-newsletter.njk" %}

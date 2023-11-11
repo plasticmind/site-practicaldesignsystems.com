@@ -211,6 +211,7 @@ h4 {
     grid-column: span 6;
 }
 
+
 .l-grid--2-col .l-grid__item--xl {
     grid-column: span 9;
 }
@@ -800,7 +801,11 @@ hr,
     margin-bottom: var(--spacing-lg);
     padding-top: var(--spacing-lg);
 }
-
+.c-post-list__description {
+    padding-top: var(--spacing-md);
+    font-size: var(--font-md);
+    color: var(--gray-20);
+}
 
 /* == Screenshot styling, with slight dropshadow */
 
@@ -834,6 +839,19 @@ hr,
     margin: 0 0 var(--spacing-xxl) var(--spacing-xxl);
 }
 
+/* == Pagination */
+/* right align second pagination div */
+.c-pagination {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--font-sm);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--gray-90);
+}
+.c-pagination__item:nth-child(2) {
+    text-align: right;
+}
 
 /* == Simple Utility Classes */
 
