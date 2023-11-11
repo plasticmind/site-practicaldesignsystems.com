@@ -1,6 +1,6 @@
 ---
 title: "Day 23: One component! In multiple products!"
-description: The true benefit a centralized component library approach.
+description: The true benefit of a centralized component library approach.
 date: 2023-10-24T05:00:00.000Z
 tags:
   - components

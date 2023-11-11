@@ -44,6 +44,9 @@ module.exports = (eleventyConfig) => {
         style: 'short'
     });
 
+    // watch for changes to css
+    eleventyConfig.addWatchTarget("./src/css/");
+
     // passthrough copy
     eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
     eleventyConfig.addPassthroughCopy("./src/assets/img/");
