@@ -1,7 +1,7 @@
 ---
 title: "Day 19: Building my new component"
 description: Building out a sample component in React.
-date: 2023-10-17
+date: 2023-10-17T05:00:00.000Z
 tags:
   - components
   - code

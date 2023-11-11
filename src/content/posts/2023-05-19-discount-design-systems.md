@@ -1,7 +1,7 @@
 ---
 title: Discount design systems…
 description: The number of iterations > quality of iterations.
-date: 2023-05-19
+date: 2023-05-19T05:00:00.000Z
 tags:
   - value
   - right-sizing

@@ -1,7 +1,7 @@
 ---
 title: The QWERTY phenomenon
 description: Design decisions, whether in ideas or in products, accumulate over time and often for good reason.
-date: 2023-06-18
+date: 2023-06-18T05:00:00.000Z
 tags:
   - design
   - humans

@@ -1,7 +1,7 @@
 ---
 title: "Day 13: I need products!"
 description: I need to create an app so I can include my design system in it.
-date: 2023-09-27
+date: 2023-09-27T05:00:00.000Z
 tags:
   - app
   - engineering

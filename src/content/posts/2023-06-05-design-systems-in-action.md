@@ -1,7 +1,7 @@
 ---
 title: Design systems in action…
 description: Comparing notes from yesterday's exercise.
-date: 2023-06-05
+date: 2023-06-05T05:00:00.000Z
 tags:
   - exercise
   - design-systems

@@ -1,7 +1,7 @@
 ---
 title: "Day 20: 5 ways to style components"
 description: There are several ways to style web components. Which do I recommend?
-date: 2023-10-18
+date: 2023-10-18T05:00:00.000Z
 tags:
   - engineering
   - code

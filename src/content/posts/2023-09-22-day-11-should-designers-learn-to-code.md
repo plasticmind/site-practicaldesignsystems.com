@@ -3,7 +3,7 @@ title: "Day 11: Should designers learn to code?"
 description: Design systems work sits at the intersection of design and
   engineering, so DS teams typically benefit from people with some skills in
   both fields.
-date: 2023-09-21
+date: 2023-09-21T05:00:00.000Z
 tags:
   - engineering
   - code

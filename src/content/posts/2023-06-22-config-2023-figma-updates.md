@@ -1,7 +1,7 @@
 ---
 title: Figma Updates from Config 2023
 description: A ton of big updates to Figma were announced yesterday at Config 2023. Here’s a big list.
-date: 2023-06-22
+date: 2023-06-22T05:00:00.000Z
 tags:
   - figma
   - tools

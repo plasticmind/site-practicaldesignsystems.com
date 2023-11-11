@@ -1,7 +1,7 @@
 ---
 title: Do your job.
 description: If you do UX (user experience) work, its your job to advocate for the user.
-date: 2023-06-15
+date: 2023-06-15T05:00:00.000Z
 tags:
   - user-advocacy
   - ux

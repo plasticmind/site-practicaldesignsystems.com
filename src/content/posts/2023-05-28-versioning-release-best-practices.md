@@ -1,7 +1,7 @@
 ---
 title: Versioning and release best practices
 description: The best system is one where users can easily understand and anticipate changes.
-date: 2023-05-28
+date: 2023-05-28T05:00:00.000Z
 tags:
   - version-control
   - process

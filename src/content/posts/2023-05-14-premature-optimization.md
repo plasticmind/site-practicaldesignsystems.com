@@ -1,7 +1,7 @@
 ---
 title: Beware premature optimization
 description: Too much abstraction or design systems work too early can be risky.
-date: 2023-05-14
+date: 2023-05-14T05:00:00.000Z
 tags:
   - optimization
   - abstraction

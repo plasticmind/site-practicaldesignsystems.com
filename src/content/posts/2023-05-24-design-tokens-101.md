@@ -1,7 +1,7 @@
 ---
 title: Design tokens 101
 description: What does randomness have to do with creativity?
-date: 2023-05-24
+date: 2023-05-24T05:00:00.000Z
 tags:
   - design-tokens
   - abstraction

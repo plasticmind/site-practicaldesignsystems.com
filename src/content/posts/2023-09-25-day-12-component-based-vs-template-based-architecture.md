@@ -3,7 +3,7 @@ title: "Day 12: Component-based vs. template-based architecture"
 description: Helping designers understand the realities of software development
   improves alignment and generates better conversations between designers and
   engineers during the product creation process.
-date: 2023-09-25
+date: 2023-09-25T05:00:00.000Z
 tags:
   - engineering
   - components

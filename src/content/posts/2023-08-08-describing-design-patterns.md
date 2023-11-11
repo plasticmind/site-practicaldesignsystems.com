@@ -1,7 +1,7 @@
 ---
 title: Describing design patterns
 description: Creating a catalog of reusable patterns that solve general design problems in specific contexts.
-date: 2023-08-08
+date: 2023-08-08T05:00:00.000Z
 tags:
   - components
   - patterns

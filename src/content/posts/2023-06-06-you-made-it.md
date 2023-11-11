@@ -1,7 +1,7 @@
 ---
 title: You made it!
 description: Comparing notes from yesterday's exercise.
-date: 2023-06-06
+date: 2023-06-06T05:00:00.000Z
 tags:
   - exercise
   - design-systems

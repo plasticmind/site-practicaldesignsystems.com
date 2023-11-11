@@ -1,7 +1,7 @@
 ---
 title: The art of abstraction...
 description: Let's go through the process of making a component.
-date: 2023-05-22
+date: 2023-05-22T05:00:00.000Z
 tags:
   - components
   - abstraction

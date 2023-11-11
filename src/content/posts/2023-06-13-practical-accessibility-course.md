@@ -1,7 +1,7 @@
 ---
 title: Practical Accessibility (Course)
 description: An exhaustive, intensely practical accessibility course.
-date: 2023-06-13
+date: 2023-06-13T05:00:00.000Z
 tags:
   - accessibility 
   - education

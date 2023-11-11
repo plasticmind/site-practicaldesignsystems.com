@@ -1,7 +1,7 @@
 ---
 title: Data visualization methods
 description: I’m always looking for clearest way to communicate insights from complicated data sets, and this chart just hit right.
-date: 2023-07-27
+date: 2023-07-27T05:00:00.000Z
 tags:
   - dataviz
   - charts

@@ -1,7 +1,7 @@
 ---
 title: In praise of generalists...
 description: The beauty of cross-discipline thinking in an increasingly complex world.
-date: 2023-07-18
+date: 2023-07-18T05:00:00.000Z
 tags:
   - generalists
   - multidisciplinary

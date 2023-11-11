@@ -1,7 +1,7 @@
 ---
 title: 🍎 Practical governance tips
 description: Design systems work, like gardening, takes time and patience and a lot of attentive tending.
-date: 2023-07-20
+date: 2023-07-20T05:00:00.000Z
 tags:
   - governance
   - systems

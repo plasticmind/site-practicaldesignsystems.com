@@ -1,7 +1,7 @@
 ---
 title: 4 ways to stop a user research mess
 description: Useful tips for large UXR practices.
-date: 2023-07-26
+date: 2023-07-26T05:00:00.000Z
 tags:
   - user-research
   - practical

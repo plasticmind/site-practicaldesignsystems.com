@@ -1,7 +1,7 @@
 ---
 title: Some design systems practice…
 description: Putting into practice what we’ve learned.
-date: 2023-06-04
+date: 2023-06-04T05:00:00.000Z
 tags:
   - exercise
   - design-systems

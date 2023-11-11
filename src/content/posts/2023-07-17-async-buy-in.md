@@ -1,7 +1,7 @@
 ---
 title: Asynchronous buy-in 
 description: Small artifacts that create asynchronous ways to clarify and convince people of the merits of your proposal (and welcome feedback in lower-pressure settings).
-date: 2023-07-17
+date: 2023-07-17T05:00:00.000Z
 tags:
   - stakeholder
   - buy-in

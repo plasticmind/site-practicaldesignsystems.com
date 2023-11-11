@@ -1,7 +1,7 @@
 ---
 title: To build a design system...
 description: (The oversimplified version.)
-date: 2023-05-11
+date: 2023-05-11T05:00:00.000Z
 tags:
   - basics
   - design-systems

@@ -1,7 +1,7 @@
 ---
 title: Structures and incentives 
 description: If you want to improve the process of building digital products, you have to consider the structures and incentives that drive people.
-date: 2023-06-24
+date: 2023-06-24T05:00:00.000Z
 tags:
   - change
   - consensus

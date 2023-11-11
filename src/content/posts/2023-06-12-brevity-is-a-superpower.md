@@ -1,7 +1,7 @@
 ---
 title: Brevity is a superpower…
 description: The more you apply these filters to your communication with others, the more valuable conversations with you will become.
-date: 2023-06-12
+date: 2023-06-12T05:00:00.000Z
 tags:
   - communication
   - leadership

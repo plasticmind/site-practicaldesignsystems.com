@@ -1,7 +1,7 @@
 ---
 title: Grading government UX
 description: The federal government has been partnering with state government to help improve the customer experience for digital products, focusing on sites and applications where residents apply for critical benefits, like Medicade, SNAP, WIC, etc.
-date: 2023-08-09
+date: 2023-08-09T05:00:00.000Z
 tags:
   - research
   - data-visualization

@@ -1,7 +1,7 @@
 ---
 title: User research + design systems = ?
 description: Research insights that lead to improving your shared resources will benefit everyone who uses them.
-date: 2023-06-20
+date: 2023-06-20T05:00:00.000Z
 tags:
   - research
   - design-systems

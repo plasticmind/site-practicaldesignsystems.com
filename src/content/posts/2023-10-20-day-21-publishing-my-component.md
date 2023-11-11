@@ -2,7 +2,7 @@
 title: "Day 21: Publishing my component"
 description: Pulling a component out of one codebase and into a separate
   component library file.
-date: 2023-10-19
+date: 2023-10-19T05:00:00.000Z
 tags:
   - components
   - code

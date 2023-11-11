@@ -1,7 +1,7 @@
 ---
 title: 5 Reasons Design Systems Fail
 description: Do any of these resonate with you? What have you noticed about design systems work that fails?
-date: 2023-06-28
+date: 2023-06-28T05:00:00.000Z
 tags:
   - fail
   - designsystems

@@ -1,7 +1,7 @@
 ---
 title: Keep your variable names as simple as possible
 description: When naming variables, don’t forget the promised value of a design system — simplified consistency.
-date: 2023-06-26
+date: 2023-06-26T05:00:00.000Z
 tags:
   - naming
   - consensus

@@ -2,7 +2,7 @@
 title: "Day 7: Do I need variants and props?"
 description: I don't need them, but I'm going to build them out so you can see
   how they can be useful in certain scenarios.
-date: 2023-09-08
+date: 2023-09-08T05:00:00.000Z
 tags:
   - components
   - variants

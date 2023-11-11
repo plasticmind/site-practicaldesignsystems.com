@@ -1,7 +1,7 @@
 ---
 title: 3 Important Product Questions
 description: Do people want to use the products your company is building? Do they understand how to use them? How do you know?
-date: 2023-06-30
+date: 2023-06-30T05:00:00.000Z
 tags:
   - basics
   - books

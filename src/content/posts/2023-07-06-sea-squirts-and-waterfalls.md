@@ -1,7 +1,7 @@
 ---
 title: Sea squirts and waterfalls
 description: In short, sea squirts make terrible product managers.
-date: 2023-07-06
+date: 2023-07-06T05:00:00.000Z
 tags:
   - product-management
   - growth

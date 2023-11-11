@@ -1,7 +1,7 @@
 ---
 title: The fake news score
 description: Discovering the real value of what you're building.
-date: 2023-07-11
+date: 2023-07-11T05:00:00.000Z
 tags:
   - value
   - mvp

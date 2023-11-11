@@ -1,7 +1,7 @@
 ---
 title: Nurturing a design system community…
 description: More collaboration = a design system that lasts longer and is resilient to organizational change.
-date: 2023-06-02
+date: 2023-06-02T05:00:00.000Z
 tags:
   - contribution
   - governance

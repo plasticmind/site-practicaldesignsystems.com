@@ -1,7 +1,7 @@
 ---
 title: Organizing your team…
 description: How does your team operate and interface with the rest of your company?
-date: 2023-06-01
+date: 2023-06-01T05:00:00.000Z
 tags:
   - contribution
   - communication

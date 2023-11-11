@@ -2,7 +2,7 @@
 title: "Day 15: Success (and some hurdles)"
 description: Design systems are a part of software development and involve the
   messy work of versioning, platforms, and dependencies.
-date: 2023-10-03
+date: 2023-10-03T05:00:00.000Z
 tags:
   - versioning
   - requirements

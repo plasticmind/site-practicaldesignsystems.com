@@ -1,7 +1,7 @@
 ---
 title: "Day 10: Gathering feedback from teams"
 description: Showing off my unified design pattern to the team for feedback.
-date: 2023-09-20
+date: 2023-09-20T05:00:00.000Z
 tags:
   - practical
   - feedback

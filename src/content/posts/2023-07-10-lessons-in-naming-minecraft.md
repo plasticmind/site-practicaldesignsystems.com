@@ -1,7 +1,7 @@
 ---
 title: A Lesson in Naming from Minecraft
 description: Create something that everyone at your org understands, document and publicize it well, and use it consistently.
-date: 2023-07-10
+date: 2023-07-10T05:00:00.000Z
 tags:
   - naming
   - conventions

@@ -1,7 +1,7 @@
 ---
 title: Consensus-building exercises for large teams
 description: Design system work often means working with multiple teams, and working with multiple teams means coming to some agreement about what to prioritize. 
-date: 2023-08-02
+date: 2023-08-02T05:00:00.000Z
 tags:
   - prioritization
   - consensus

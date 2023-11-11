@@ -1,7 +1,7 @@
 ---
 title: 🌊 Over the Design Systems Waterfall
 description: Don't let your design system become a little waterfall that solves problems only in theory.
-date: 2023-07-03
+date: 2023-07-03T05:00:00.000Z
 tags:
   - agile
   - waterfall

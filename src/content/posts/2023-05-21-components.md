@@ -1,7 +1,7 @@
 ---
 title: Let's talk about components...
 description: A brief primer on code components and component libraries
-date: 2023-05-21
+date: 2023-05-21T05:00:00.000Z
 tags:
   - components
   - abstraction

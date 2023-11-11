@@ -1,7 +1,7 @@
 ---
 title: "Day 1: Starting an interface inventory"
 description: Collecting an inventory of our digital products.
-date: 2023-08-30
+date: 2023-08-30T05:00:00.000Z
 tags:
   - interface-inventory
   - getting-started

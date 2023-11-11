@@ -1,7 +1,7 @@
 ---
 title: Design system as leverage.
 description: The systems and processes you build to deliver on your value proposition are key assets for your organization.
-date: 2023-06-21
+date: 2023-06-21T05:00:00.000Z
 tags:
   - assets
   - investment

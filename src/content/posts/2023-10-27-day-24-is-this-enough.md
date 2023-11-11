@@ -2,7 +2,7 @@
 title: "Day 24: Is this enough?"
 description: With some really thoughtfully structured design systems, we can
   reduce the friction between design decisions and software development.
-date: 2023-10-26
+date: 2023-10-26T05:00:00.000Z
 tags:
   - recap
   - handoff

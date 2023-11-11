@@ -1,7 +1,7 @@
 ---
 title: Roadmap vs. Forecast
 description: Comparing notes from yesterday's exercise.
-date: 2023-06-09
+date: 2023-06-09T05:00:00.000Z
 tags:
   - planning
   - communication

@@ -1,7 +1,7 @@
 ---
 title: Is democratizing user research a bad idea?
 description: The thin line between inclusivity and quality research.
-date: 2023-07-25
+date: 2023-07-25T05:00:00.000Z
 tags:
   - user-research
   - inclusivity

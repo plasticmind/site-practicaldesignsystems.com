@@ -1,7 +1,7 @@
 ---
 title: What is a design pattern?
 description: Timeless design advice from a classic book on software development.
-date: 2023-08-07
+date: 2023-08-07T05:00:00.000Z
 tags:
   - design-patterns
   - components

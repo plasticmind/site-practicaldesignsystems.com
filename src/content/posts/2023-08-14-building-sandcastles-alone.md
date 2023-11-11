@@ -1,7 +1,7 @@
 ---
 title: Building sandcastles alone
 description: Getting everyone on the same beach.
-date: 2023-08-14
+date: 2023-08-14T05:00:00.000Z
 tags:
   - collaboration
   - buy-in

@@ -1,7 +1,7 @@
 ---
 title: Systems thrive on connections…
 description: The real power of design systems is in how their parts are connected.
-date: 2023-05-26
+date: 2023-05-26T05:00:00.000Z
 tags:
   - connectedness
   - collaboration

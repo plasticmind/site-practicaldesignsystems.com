@@ -1,7 +1,7 @@
 ---
 title: Evolving documentation…
 description: The best documentation is dynamic, connected, relevant… and updated!
-date: 2023-05-27
+date: 2023-05-27T05:00:00.000Z
 tags:
   - documentation
   - connectedness

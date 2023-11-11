@@ -1,7 +1,7 @@
 ---
 title: How Ford names variables...
 description: ...
-date: 2023-06-27
+date: 2023-06-27T05:00:00.000Z
 tags:
   - examples
   - naming

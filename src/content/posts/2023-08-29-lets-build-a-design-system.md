@@ -1,7 +1,7 @@
 ---
 title: Let's build a design system!
 description: I’m going to walk you through the process of building a “just enough” design system.
-date: 2023-08-29
+date: 2023-08-29T05:00:00.000Z
 tags:
   - getting-started
   - practical

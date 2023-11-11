@@ -1,7 +1,7 @@
 ---
 title: Design system challenges...
 description: A few key challenges facing the field of design systems.
-date: 2023-06-11
+date: 2023-06-11T05:00:00.000Z
 tags:
   - challenges
 ---

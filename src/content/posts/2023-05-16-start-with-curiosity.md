@@ -1,7 +1,7 @@
 ---
 title: Start with curiosity…
 description: What does Darwin have to do with building a design system?
-date: 2023-05-16
+date: 2023-05-16T05:00:00.000Z
 tags:
   - 30-days
   - research

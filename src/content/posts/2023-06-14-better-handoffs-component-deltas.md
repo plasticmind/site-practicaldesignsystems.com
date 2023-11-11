@@ -1,7 +1,7 @@
 ---
 title: Component deltas for less painful handoffs
 description: A record of variations between proposed designs and existing components for better collaboration between engineers and designers.
-date: 2023-06-14
+date: 2023-06-14T05:00:00.000Z
 tags:
   - collaboration
   - tips

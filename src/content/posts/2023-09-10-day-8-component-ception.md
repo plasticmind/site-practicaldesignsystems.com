@@ -1,7 +1,7 @@
 ---
 title: "Day 8: Component-ception"
 description: Adding components inside components.
-date: 2023-09-11
+date: 2023-09-11T05:00:00.000Z
 tags:
   - component
   - autolayout

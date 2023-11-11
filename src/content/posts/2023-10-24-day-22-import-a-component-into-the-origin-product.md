@@ -2,7 +2,7 @@
 title: "Day 22: Import a component into the origin product"
 description: Prepping component libraries is not glamorous, but it helps ensure
   compatibility across codebases.
-date: 2023-10-23
+date: 2023-10-23T05:00:00.000Z
 tags:
   - components
   - code

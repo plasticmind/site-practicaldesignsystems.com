@@ -1,7 +1,7 @@
 ---
 title: A design system skeptic?
 description: Why would a design system skeptic write about building design systems?
-date: 2023-05-09
+date: 2023-05-09T05:00:00.000Z
 tags:
   - practical
   - product

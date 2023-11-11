@@ -1,7 +1,7 @@
 ---
 title: Where does AI fit in product design?
 description: A tool to assist and support designers, not replace them.
-date: 2023-06-23
+date: 2023-06-23T05:00:00.000Z
 tags:
   - ai
   - figma

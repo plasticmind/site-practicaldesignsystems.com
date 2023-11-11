@@ -1,7 +1,7 @@
 ---
 title: Design ❤️ Dev
 description: Mastering the art of giving constructive feedback to engineers.
-date: 2023-08-18
+date: 2023-08-18T05:00:00.000Z
 tags:
   - design
   - engineering

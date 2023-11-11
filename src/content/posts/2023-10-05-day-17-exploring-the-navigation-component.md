@@ -2,7 +2,7 @@
 title: "Day 17: Exploring the Navigation Component"
 description: Recreating a Utility Nav component I designed in Figma using one of
   Atlassian's design system components.
-date: 2023-10-05
+date: 2023-10-05T05:00:00.000Z
 tags:
   - component
   - code

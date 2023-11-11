@@ -1,7 +1,7 @@
 ---
 title: Finding work by solving problems...
 description: Identifying pain points and solving real problems is a good start.
-date: 2023-06-17
+date: 2023-06-17T05:00:00.000Z
 tags:
   - employment
   - value

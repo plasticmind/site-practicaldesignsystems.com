@@ -1,7 +1,7 @@
 ---
 title: Multi-platform design systems…
 description: How can design systems support native applications?
-date: 2023-05-29
+date: 2023-05-29T05:00:00.000Z
 tags:
   - native
   - patterns

@@ -1,7 +1,7 @@
 ---
 title: Better than a truck full of Lego...
 description: Let's go through the process of making a component.
-date: 2023-05-23
+date: 2023-05-23T05:00:00.000Z
 tags:
   - components
   - abstraction

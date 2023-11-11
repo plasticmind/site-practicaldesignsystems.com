@@ -1,7 +1,7 @@
 ---
 title: Encouraging participation
 description: How do you invite people to participate in ways they feel comforatble opening up?
-date: 2023-06-10
+date: 2023-06-10T05:00:00.000Z
 tags:
   - teambuilding
   - culture

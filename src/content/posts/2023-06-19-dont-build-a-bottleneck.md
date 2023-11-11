@@ -1,7 +1,7 @@
 ---
 title: Building bottlenecks...
 description: When you create tools that everyone in your organization uses, you're at risk of creating a bottleneck.
-date: 2023-06-19
+date: 2023-06-19T05:00:00.000Z
 tags:
   - governance
   - contribution

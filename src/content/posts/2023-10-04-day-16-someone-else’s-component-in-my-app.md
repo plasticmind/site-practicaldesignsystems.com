@@ -2,7 +2,7 @@
 title: "Day 16: Someone else’s component in my app!"
 description: Figure out what assumptions you can make about your audience’s
   skill level and make sure you verify that assumption.
-date: 2023-10-04
+date: 2023-10-04T05:00:00.000Z
 tags:
   - code
   - engineering

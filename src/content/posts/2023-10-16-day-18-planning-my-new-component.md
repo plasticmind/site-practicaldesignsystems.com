@@ -1,7 +1,7 @@
 ---
 title: "Day 18: Planning my new component"
 description: I've designed my component, now it's time to build it.
-date: 2023-10-16
+date: 2023-10-16T05:00:00.000Z
 tags:
   - spec
   - documentation

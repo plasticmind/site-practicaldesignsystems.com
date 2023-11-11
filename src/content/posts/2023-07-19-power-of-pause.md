@@ -1,7 +1,7 @@
 ---
 title: The power of pause
 description: Pause, breath, reflect.
-date: 2023-07-19
+date: 2023-07-19T05:00:00.000Z
 tags:
   - reflection
   - productivity

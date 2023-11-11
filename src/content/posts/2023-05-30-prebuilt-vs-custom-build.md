@@ -1,7 +1,7 @@
 ---
 title: Pre-built vs. roll your own…
 description: How can design systems support native applications?
-date: 2023-05-30
+date: 2023-05-30T05:00:00.000Z
 tags:
   - roi
   - third-party

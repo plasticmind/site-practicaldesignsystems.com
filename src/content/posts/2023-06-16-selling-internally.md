@@ -1,7 +1,7 @@
 ---
 title: Selling internally...
 description: You are always marketing your team internally, and you need to grow its reputation over time.
-date: 2023-06-16
+date: 2023-06-16T05:00:00.000Z
 tags:
   - budget
   - leadership

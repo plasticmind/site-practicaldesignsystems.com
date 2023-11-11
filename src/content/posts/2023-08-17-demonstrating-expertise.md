@@ -1,7 +1,7 @@
 ---
 title: Demonstrating expertise in design systems
 description: How do you showcase design systems work and expertise?
-date: 2023-08-17
+date: 2023-08-17T05:00:00.000Z
 tags:
   - hiring
   - portfolio

@@ -1,7 +1,7 @@
 ---
 title: Terrible name… useful way to prioritize
 description: Creating a well-documented “why we decided to prioritize this” hand-shake agreement.
-date: 2023-08-03
+date: 2023-08-03T05:00:00.000Z
 tags:
   - productivity
   - consensus

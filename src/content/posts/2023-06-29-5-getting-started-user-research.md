@@ -1,7 +1,7 @@
 ---
 title: Getting started with user research
 description: ...
-date: 2023-06-29
+date: 2023-06-29T05:00:00.000Z
 tags:
   - user-research
   - agile

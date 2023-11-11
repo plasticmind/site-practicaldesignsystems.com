@@ -2,7 +2,7 @@
 title: "Day 3: Extracting patterns with a commonality spectrum"
 description: Extracting a unified standard from various patterns by ranking
   design characteristics on a commonality spectrum.
-date: 2023-09-01
+date: 2023-09-01T05:00:00.000Z
 tags:
   - patterns
   - extraction

@@ -1,7 +1,7 @@
 ---
 title: Perceptual diversity 
 description: ...
-date: 2023-07-04
+date: 2023-07-04T05:00:00.000Z
 tags:
   - ux
   - human-behavior

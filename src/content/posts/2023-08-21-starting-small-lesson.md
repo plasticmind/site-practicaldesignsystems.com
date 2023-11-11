@@ -1,7 +1,7 @@
 ---
 title: Starting small, a lesson from the shore
 description: Choose something small yet important that users of your design system really need right now and knock it out.
-date: 2023-08-21
+date: 2023-08-21T05:00:00.000Z
 tags:
   - getting-started
   - pratical

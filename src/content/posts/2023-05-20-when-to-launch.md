@@ -1,7 +1,7 @@
 ---
 title: When to launch...
 description: It's more important then how.
-date: 2023-05-20
+date: 2023-05-20T05:00:00.000Z
 tags:
   - timing
   - release

@@ -1,7 +1,7 @@
 ---
 title: How are you going to pay for that?
 description: Convincing stakeholders of the value of a design system.
-date: 2023-05-18
+date: 2023-05-18T05:00:00.000Z
 tags:
   - buy-in
   - value
