@@ -1014,3 +1014,9 @@ hr,
         padding: 0 var(--spacing-xxl);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .l-grid--2-col .l-grid__item--xs {
+        text-align: right;
+    }
+}
