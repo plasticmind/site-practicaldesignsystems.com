@@ -14,6 +14,7 @@ const dateFeed = require("./src/_11ty/filters/date.js").dateFeed;
 const dateYear = require("./src/_11ty/filters/date.js").dateYear;
 const shuffle = require("./src/_11ty/filters/shuffle.js");
 const excludeDrafts = require("./src/_11ty/filters/excludeDrafts.js");
+const excludeFuture = require("./src/_11ty/filters/excludeFuture.js");
 const excludeNoIndex = require("./src/_11ty/filters/excludeNoIndex.js");
 
 // collections
@@ -30,6 +31,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("limit", limit);
     eleventyConfig.addFilter("shuffle", shuffle);
     eleventyConfig.addFilter("excludeDrafts", excludeDrafts);
+    eleventyConfig.addFilter("excludeFuture", excludeFuture);
     eleventyConfig.addFilter("excludeNoIndex", excludeNoIndex);
 
     // collections
