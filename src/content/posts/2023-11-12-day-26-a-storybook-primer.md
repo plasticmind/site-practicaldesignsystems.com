@@ -22,9 +22,8 @@ In its simplest form, Storybook is a package installed in your app paired with a
 
 Here’s what’s happening in this particular story file:
 
-* Pull in the Storybook package (React in this case)
 * Pull in the app’s button component (and related props)
-* Tell Storybook that the stories we’re about to define are for this Button component
+* Tell Storybook that we're exporting a button component
 * Create a story called **Primary** where the Button component’s `primary` prop is set to `true` and its label is set to `Button`
 
 Now, if you were to run Storybook locally, a “Button story” will show up in the Storybook interface, like this: 
