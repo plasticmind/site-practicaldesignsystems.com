@@ -6,7 +6,7 @@ tags:
   - chatgpt
   - accessibility
   - documentation
-draft: true
+draft: false
 ---
 *Important problems, a custom GPT, and multi-window wizardry.*
 
