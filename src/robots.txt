@@ -3,6 +3,9 @@ Allow: /
 Disallow: /admin/
 Disallow: /cdn-cgi/
 
+User-agent: GPTBot
+Disallow: /
+
 Host: https://practicaldesignsystems.com/
 
 Sitemap: https://practicaldesignsystems.com/sitemap.xml
