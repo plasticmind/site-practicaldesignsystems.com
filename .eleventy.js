@@ -55,6 +55,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("./src/assets/css/");
     eleventyConfig.addPassthroughCopy("./src/assets/js/");
     eleventyConfig.addPassthroughCopy("./src/admin/"); // Decap CMS
+    eleventyConfig.addPassthroughCopy("./src/robots.txt"); // Decap CMS
+    
 
     // base config
     return {

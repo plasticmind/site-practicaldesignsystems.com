@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cdn-cgi/
+
+Host: https://practicaldesignsystems.com/
+
+Sitemap: https://practicaldesignsystems.com/sitemap.xml
