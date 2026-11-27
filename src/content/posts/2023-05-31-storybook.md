@@ -1,6 +1,7 @@
 ---
 title: Let's talk Storybook…
-description: How can design systems support native applications?
+seoTitle: "What is Storybook? A primer for design system teams"
+description: "What Storybook is, why designers should understand it, and how it documents and showcases a live component library."
 date: 2023-05-31T05:00:00.000Z
 tags:
   - web

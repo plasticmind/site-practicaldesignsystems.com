@@ -1,6 +1,6 @@
 ---
 title: Your design system is a product
-description: Too much abstraction or design systems work too early can be risky.
+description: "Treat your design system like a product: research your users, study comparable products, and build what meets their needs."
 date: 2023-05-15T05:00:00.000Z
 tags:
   - 30-days

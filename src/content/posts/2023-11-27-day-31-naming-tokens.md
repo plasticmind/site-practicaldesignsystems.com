@@ -1,5 +1,6 @@
 ---
 title: "Day 31: Naming tokens"
+seoTitle: "Naming design tokens: primitive, semantic, and component tokens"
 description: A quick review of design tokens, with a focus on practical naming
   strategies for a small, MVP component library with an eye toward growth.
 date: 2023-11-27T10:00:21.843Z

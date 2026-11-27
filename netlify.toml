@@ -1,2 +1,6 @@
+[build]
+  command = "npm run build:prod"
+  publish = "public"
+
 [build.environment]
   TZ='America/New_York'

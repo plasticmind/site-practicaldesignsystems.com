@@ -1,6 +1,7 @@
 ---
 title: "Day 1: Starting an interface inventory"
-description: Collecting an inventory of our digital products.
+seoTitle: "How to start an interface inventory (with an example)"
+description: "Start a design system with an interface inventory: screenshot every digital product, line them up in Figma, and spot the common patterns."
 date: 2023-08-30T05:00:00.000Z
 tags:
   - interface-inventory

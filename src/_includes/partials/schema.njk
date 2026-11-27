@@ -1,0 +1,76 @@
+{#- Structured data (schema.org JSON-LD). Describes the site, the consultancy,
+    and its author as linked entities, plus BlogPosting data on each post. -#}
+{%- set pageUrl = site.url + page.url -%}
+{%- set personId = site.url + "/#person" -%}
+{%- set orgId = site.url + "/#organization" -%}
+{%- set siteId = site.url + "/#website" -%}
+{%- set graph = [
+  {
+    "@type": "WebSite",
+    "@id": siteId,
+    "url": site.url + "/",
+    "name": site.name,
+    "description": site.description,
+    "inLanguage": "en-US",
+    "publisher": { "@id": orgId }
+  },
+  {
+    "@type": "Organization",
+    "@id": orgId,
+    "name": site.name,
+    "url": site.url + "/",
+    "logo": { "@type": "ImageObject", "url": site.url + site.logo, "width": 512, "height": 512 },
+    "description": "A consultancy that helps organizations with multiple teams and products build design systems and improve collaboration between stakeholders, designers, and developers.",
+    "founder": { "@id": personId },
+    "knowsAbout": site.knowsAbout
+  },
+  {
+    "@type": "Person",
+    "@id": personId,
+    "name": site.author.name,
+    "url": site.author.url,
+    "image": site.url + site.author.image,
+    "worksFor": { "@id": orgId },
+    "knowsAbout": site.knowsAbout,
+    "sameAs": site.author.sameAs
+  }
+] -%}
+{%- if ogtype == "article" -%}
+  {%- set postImage = (content | firstImage) or site.ogImage -%}
+  {%- set _pushed = graph.push({
+    "@type": "BlogPosting",
+    "@id": pageUrl + "#article",
+    "mainEntityOfPage": pageUrl,
+    "url": pageUrl,
+    "headline": title,
+    "description": description,
+    "datePublished": page.date | dateISO,
+    "dateModified": (updated or page.date) | dateISO,
+    "author": { "@id": personId },
+    "publisher": { "@id": orgId },
+    "isPartOf": { "@id": siteId },
+    "image": site.url + postImage,
+    "keywords": tags | join(", "),
+    "inLanguage": "en-US"
+  }) -%}
+  {%- set _pushed = graph.push({
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": site.url + "/" },
+      { "@type": "ListItem", "position": 2, "name": "Design Systems Daily", "item": site.url + "/daily/" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": pageUrl }
+    ]
+  }) -%}
+{%- else -%}
+  {%- set _pushed = graph.push({
+    "@type": "CollectionPage" if section == "daily" else "WebPage",
+    "@id": pageUrl,
+    "url": pageUrl,
+    "name": title,
+    "description": description,
+    "isPartOf": { "@id": siteId },
+    "about": { "@id": orgId },
+    "inLanguage": "en-US"
+  }) -%}
+{%- endif %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": graph } | dump | safe }}</script>

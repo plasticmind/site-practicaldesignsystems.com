@@ -1,6 +1,6 @@
 ---
 title: You made it!
-description: Comparing notes from yesterday's exercise.
+description: "The wrap-up of 30 Days of Design Systems: what you learned and what comes next."
 date: 2023-06-06T05:00:00.000Z
 tags:
   - exercise

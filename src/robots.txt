@@ -1,11 +1,28 @@
+# Search engines and all other crawlers
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /cdn-cgi/
 
+# AI search and answer engines. These fetch pages to cite them in
+# ChatGPT search, Claude, Perplexity, and similar answers.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin/
+
+# AI model training. Allowing these lets future models learn from this
+# site's content, which helps them recommend it without a live search.
+# To opt out of training only, change "Allow: /" to "Disallow: /" here.
 User-agent: GPTBot
-Disallow: /
-
-Host: https://practicaldesignsystems.com/
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
 
 Sitemap: https://practicaldesignsystems.com/sitemap.xml

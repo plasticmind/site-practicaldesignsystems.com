@@ -1,6 +1,6 @@
 ---
 title: Perceptual diversity 
-description: ...
+description: "What the 2015 dress debate teaches about perception, and why your users don't all see your interface the same way."
 date: 2023-07-04T05:00:00.000Z
 tags:
   - ux

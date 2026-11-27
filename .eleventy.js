@@ -4,6 +4,8 @@
 const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
 const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
 
 // filters
 const limit = require("./src/_11ty/filters/limit.js");
@@ -33,6 +35,51 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("excludeDrafts", excludeDrafts);
     eleventyConfig.addFilter("excludeFuture", excludeFuture);
     eleventyConfig.addFilter("excludeNoIndex", excludeNoIndex);
+
+    // Returns the first local post image path in rendered HTML, for social
+    // cards and structured data. Returns false when the post has no image.
+    eleventyConfig.addFilter("firstImage", (html) => {
+        const match = /<img[^>]+src="(?:https:\/\/practicaldesignsystems\.com)?(\/assets\/i\/[^"]+)"/.exec(html || "");
+        return match ? match[1] : false;
+    });
+
+    // Optimize post images: resize, convert to WebP (keeping the original
+    // format as a fallback), and add width/height to prevent layout shift.
+    // GIFs are left alone so animations keep working.
+    eleventyConfig.addTransform("optimizePostImages", async function (html) {
+        if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return html;
+        const imgTag = /<img\b[^>]*\bsrc="(?:https:\/\/practicaldesignsystems\.com)?(\/assets\/i\/[^"]+\.(?:png|jpe?g))"[^>]*>/gi;
+        const matches = [...html.matchAll(imgTag)];
+        for (const [tag, src] of matches) {
+            const alt = (/\balt="([^"]*)"/.exec(tag) || [])[1] || "";
+            const metadata = await Image(path.join("src", src), {
+                widths: [768, 1536],
+                formats: ["webp", "auto"],
+                outputDir: "./public/assets/img-opt/",
+                urlPath: "/assets/img-opt/",
+                filenameFormat: (id, file, width, format) =>
+                    `${path.basename(file, path.extname(file))}-${width}w.${format}`,
+            });
+            const picture = Image.generateHTML(metadata, {
+                alt,
+                sizes: "(min-width: 800px) 768px, 100vw",
+                loading: "lazy",
+                decoding: "async",
+            });
+            html = html.replace(tag, picture);
+        }
+        return html;
+    });
+
+    // Lazy-load and async-decode Markdown images so long posts render faster.
+    eleventyConfig.amendLibrary("md", (md) => {
+        const defaultImage = md.renderer.rules.image;
+        md.renderer.rules.image = (tokens, idx, options, env, self) => {
+            tokens[idx].attrSet("loading", "lazy");
+            tokens[idx].attrSet("decoding", "async");
+            return defaultImage(tokens, idx, options, env, self);
+        };
+    });
 
     // collections
     eleventyConfig.addCollection("posts", posts);

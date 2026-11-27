@@ -1,8 +1,7 @@
 ---
 title: "Day 14: Using an existing design system"
-description: Legacy support, versioning, release cadence — these are the types
-  of things engineers think about when creating applications. If you’re building
-  tools that engineering teams will consume, you need to be mindful of them too.
+seoTitle: "How to adopt an existing design system (Atlassian example)"
+description: "What it's like to build an app with an existing design system, using Atlassian's: setup, versioning, legacy support, and release cadence."
 date: 2023-10-02T05:00:00.000Z
 tags:
   - engineering

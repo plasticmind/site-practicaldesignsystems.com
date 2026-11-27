@@ -12,7 +12,7 @@ Today, you’ll start to see the true benefit a centralized component library ap
 
 I set up a second practice BofA app as part of this demonstration. I followed [the same instructions as yesterday](https://practicaldesignsystems.com/daily/day-22-import-a-component-into-the-origin-product/) to install the component library. I included the `<UtilityNav>` component above the fake header of my fake site, and voila:
 
-![](/assets/i/post-bofa-24-1.png)
+![A practice app with the Utility Nav component from the shared component library in its top bar](/assets/i/post-bofa-24-1.png)
 
 See that top bar? That’s the Utility Nav component, getting pulled in from our design system’s component library.
 
@@ -34,7 +34,7 @@ Once I’ve made those changes, I commit to Git, publish to npm, and import the 
 
 Behold, two instances of a component:
 
-![](/assets/i/post-bofa-24-2.png)
+![Two different apps, each showing the same Utility Nav component from the component library](/assets/i/post-bofa-24-2.png)
 
 —
 
