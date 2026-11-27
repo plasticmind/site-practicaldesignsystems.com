@@ -1,6 +1,6 @@
 ---
 title: Design tokens 101
-description: What does randomness have to do with creativity?
+description: "Design tokens are key/value pairs that store small design decisions like color, typography, and spacing. Here's how they work."
 date: 2023-05-24T05:00:00.000Z
 tags:
   - design-tokens

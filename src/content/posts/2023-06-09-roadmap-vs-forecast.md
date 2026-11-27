@@ -1,6 +1,6 @@
 ---
 title: Roadmap vs. Forecast
-description: Comparing notes from yesterday's exercise.
+description: "Product roadmaps get less reliable the further out they go. Why a forecast is a better model for design system planning."
 date: 2023-06-09T05:00:00.000Z
 tags:
   - planning

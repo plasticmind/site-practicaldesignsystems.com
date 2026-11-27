@@ -1,6 +1,6 @@
 ---
 title: How Ford names variables...
-description: ...
+description: "How Ford names design tokens and variables across web, mobile, wearables, and in-vehicle interfaces."
 date: 2023-06-27T05:00:00.000Z
 tags:
   - examples

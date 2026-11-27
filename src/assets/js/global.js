@@ -1,10 +1,20 @@
 // # Fire confetti upon successful newsletter submission
+// The confetti library loads only after a successful signup, so it doesn't
+// slow down every page view.
+function fireConfetti() {
+    if (window.confetti) { window.confetti(); return; }
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js';
+    script.onload = function() { window.confetti(); };
+    document.head.appendChild(script);
+}
+
 const observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
         if (mutation.addedNodes.length) {
             for (let i = 0; i < mutation.addedNodes.length; i++) {
-                if (mutation.addedNodes[i].dataset.element === "success") {
-                    confetti();
+                if (mutation.addedNodes[i].dataset && mutation.addedNodes[i].dataset.element === "success") {
+                    fireConfetti();
                     observer.disconnect();
                 }
             }

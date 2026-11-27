@@ -1,6 +1,6 @@
 ---
 title: Better than a truck full of Lego...
-description: Let's go through the process of making a component.
+description: "Go beyond base UI components with a library of common component patterns that speeds up teams and unifies your products."
 date: 2023-05-23T05:00:00.000Z
 tags:
   - components

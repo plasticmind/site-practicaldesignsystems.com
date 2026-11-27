@@ -1,6 +1,7 @@
 ---
 title: "Day 10: Gathering feedback from teams"
-description: Showing off my unified design pattern to the team for feedback.
+seoTitle: "Gathering team feedback on a Figma design system component"
+description: "How to review a new Figma component with your team: recap the pattern work, validate the unified standard, and collect feedback before you build it."
 date: 2023-09-20T05:00:00.000Z
 tags:
   - practical

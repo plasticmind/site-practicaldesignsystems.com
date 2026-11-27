@@ -1,6 +1,6 @@
 ---
 title: Measuring success…
-description: More collaboration = a design system that lasts longer and is resilient to organizational change.
+description: "How to measure design system success, starting with adoption and the other metrics design system leads track."
 date: 2023-06-03T05:00:00.000Z
 tags:
   - analytics

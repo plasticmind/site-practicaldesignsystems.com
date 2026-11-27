@@ -1,6 +1,6 @@
 ---
 title: Pre-built vs. roll your own…
-description: How can design systems support native applications?
+description: "Should you build a custom design system framework or adopt Tailwind or Material UI? How to weigh building against buying."
 date: 2023-05-30T05:00:00.000Z
 tags:
   - roi

@@ -1,6 +1,7 @@
 ---
 title: Terrible name… useful way to prioritize
-description: Creating a well-documented “why we decided to prioritize this” hand-shake agreement.
+seoTitle: "WSJF: A terrible name for a useful way to prioritize"
+description: "Weighted shortest job first (WSJF) scores work by cost of delay divided by job size. How to use it to agree on priorities across teams."
 date: 2023-08-03T05:00:00.000Z
 tags:
   - productivity

@@ -1,20 +1,54 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% if section != 'home' %}{% if title %}{{ title | safe }} → {% endif %}{% endif %}{{ site.title }}</title>
-    {% if description %}<meta name="description" content="{{ description }}">{% endif %}   
+    {#- seoTitle overrides the on-page headline in search results and social
+        cards. The site-name suffix is dropped when it would push the title
+        past ~60 characters, where Google truncates it. -#}
+    {%- set searchTitle = seoTitle or title %}
+    <title>
+      {%- if section == 'home' -%}{{ seoTitle or site.title }}
+      {%- elif searchTitle and (searchTitle | length) > 33 -%}{{ searchTitle | safe }}
+      {%- elif searchTitle -%}{{ searchTitle | safe }} → {{ site.title }}
+      {%- else -%}{{ site.title }}{%- endif -%}
+    </title>
+    {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+    {% if crawl == 'false' %}<meta name="robots" content="noindex">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{% endif %}
     <link rel="canonical" href="{{ site.url }}{{page.url}}">
+    <link rel="alternate" type="application/rss+xml" title="Design Systems Daily" href="{{ site.url }}/feed.xml">
+    <meta name="author" content="{{ site.author.name }}">
 
-    <meta property="og:title" content="{{ title | safe }}">
-    <meta property="og:site_name" content="{{ site.title }}">
+    {%- set firstPostImage = content | firstImage if ogtype == 'article' else false %}
+    {%- set shareImage = site.url + (firstPostImage or site.ogImage) %}
+    <meta property="og:title" content="{{ searchTitle | safe }}">
+    <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:url" content="{{ site.url }}{{page.url}}">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="{%- if ogtype -%}{{ ogtype }}{%- else -%}website{%- endif -%}">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{{ site.url }}/assets/img/pds-logo-open-graph.png">
+    <meta property="og:image" content="{{ shareImage }}">
+    {%- if not firstPostImage %}
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+    {%- endif %}
+    {%- if ogtype == 'article' %}
+    <meta property="article:published_time" content="{{ page.date | dateISO }}">
+    <meta property="article:modified_time" content="{{ (updated or page.date) | dateISO }}">
+    <meta property="article:author" content="{{ site.author.url }}">
+    {%- for tag in tags %}
+    <meta property="article:tag" content="{{ tag }}">
+    {%- endfor %}
+    {%- endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:creator" content="{{ site.twitter }}">
+    <meta name="twitter:title" content="{{ searchTitle | safe }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ shareImage }}">
+
+    {% include "partials/schema.njk" %}
+
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/xhn3otp.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/global.css">    
 

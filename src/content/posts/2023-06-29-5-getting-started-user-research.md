@@ -1,6 +1,6 @@
 ---
 title: Getting started with user research
-description: ...
+description: "Product decisions that aren't grounded in user research are guesses. Here's how to get started with user research."
 date: 2023-06-29T05:00:00.000Z
 tags:
   - user-research

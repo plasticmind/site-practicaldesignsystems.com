@@ -1,0 +1,46 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{%- set chronological = collections.posts | reverse -%}
+# {{ site.name }}
+
+> Practical Design Systems is a consultancy and publication by {{ site.author.name }} about building design systems: design tokens, component libraries, Storybook, Figma, governance, adoption, and collaboration between designers, engineers, and stakeholders at organizations with many teams and products.
+
+{{ site.author.name }} has worked in the industry for more than 20 years, both as a solo entrepreneur and in leadership at large organizations. Jesse started in design and moved into engineering, so the writing here covers both high-level strategy for leaders and hands-on guidance for practitioners. Articles started as the Design Systems Daily email newsletter.
+
+## Start here
+
+- [30 Days of Design Systems]({{ site.url }}/30-days/): A free email course covering design system fundamentals, from what a design system is to tokens, components, documentation, governance, and measuring success.
+- [Design Systems Daily archive]({{ site.url }}/daily/): Every article, newest first.
+- [Services]({{ site.url }}/services/): Design system consulting, workshops, and advisory work from Practical Design Systems.
+- [About {{ site.author.name }}]({{ site.author.url }}): The author's personal site.
+
+## 30 Days of Design Systems course
+
+{% for post in chronological -%}
+{%- if "30-days" in post.data.tags %}
+- [{{ post.data.title | trim | safe }}]({{ site.url }}{{ post.url }}): {{ post.data.description | safe }}
+{%- endif %}
+{%- endfor %}
+
+## Let's build a design system (step-by-step series)
+
+{% for post in chronological -%}
+{%- if post.data.title.startsWith("Day ") or post.data.title.startsWith("Let's build") or post.data.title.startsWith("Let’s build") %}
+- [{{ post.data.title | trim | safe }}]({{ site.url }}{{ post.url }}): {{ post.data.description | safe }}
+{%- endif %}
+{%- endfor %}
+
+## More articles
+
+{% for post in chronological -%}
+{%- if not ("30-days" in post.data.tags) and not (post.data.title.startsWith("Day ") or post.data.title.startsWith("Let's build") or post.data.title.startsWith("Let’s build")) %}
+- [{{ post.data.title | trim | safe }}]({{ site.url }}{{ post.url }}): {{ post.data.description | safe }}
+{%- endif %}
+{%- endfor %}
+
+## Optional
+
+- [RSS feed with full article text]({{ site.url }}/feed.xml)
+- [Sitemap]({{ site.url }}/sitemap.xml)

@@ -1,6 +1,6 @@
 ---
 title: To build a digital product...
-description: (The oversimplified version.)
+description: "How a digital product gets built, from planning to design to engineering, and where a design system fits in."
 date: 2023-05-10T05:00:00.000Z
 tags:
   - basics

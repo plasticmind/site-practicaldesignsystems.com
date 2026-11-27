@@ -1,6 +1,6 @@
 ---
 title: To build a design system...
-description: (The oversimplified version.)
+description: "A design system is a set of principles, procedures, and tools that render a designer's intended outcome. Here are its common parts."
 date: 2023-05-11T05:00:00.000Z
 tags:
   - basics
