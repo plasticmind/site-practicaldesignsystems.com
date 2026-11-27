@@ -3,4 +3,6 @@
   publish = "public"
 
 [build.environment]
-  TZ='America/New_York'
+  TZ = "America/New_York"
+  # eleventy-img and sharp need Node 18.17 or later.
+  NODE_VERSION = "22"
